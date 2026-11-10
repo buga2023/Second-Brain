@@ -7,17 +7,48 @@ tags: [meta]
 # Log
 
 Registro cronológico (append-only) do que entrou ou mudou no vault.
-Formato: `AAAA-MM-DD — evento`.
+Formato: `## [AAAA-MM-DD] operação | título`, onde operação é
+`setup`, `ingest`, `query`, `lint` ou `refactor`. Últimas entradas:
+`grep "^## \[" log.md | tail -5`.
 
-2026-11-10 — Scaffold inicial do vault (índice, pastas memory/*, glossário).
-2026-11-10 — Ingest: skill `triagem-automacao-gp` registrada em memory/projects.
-2026-11-10 — Ingest: skill `graph-engineering` criada e `watch` instalada
-  (bradautomates/claude-video), backup de ambas em skills/.
-2026-11-10 — Ingest: decisão "entrevista antes do grafo" (vídeos
-  Maestros da IA) registrada em memory/context.
-2026-11-10 — Ingest: conselhos do Matt Pocock (vídeo + repo
-  mattpocock/skills) — plugin "Skills For Real Engineers" instalado,
-  grilling/wayfinder/writing-for-agents citados em CLAUDE.md e
-  graph-engineering; nota matt-pocock.md criada.
+## [2026-11-05] setup | Vault local criado (wiki/ + raw/)
+Estrutura raw/ + wiki/ + CLAUDE.md (Karpathy LLM Wiki + schema PT-BR), em `~/Desktop/Brain`.
+
+## [2026-11-05] ingest | Post LangChain/LangGraph
+## [2026-11-05] ingest | Paper Self-Harness (arXiv 2606.09498)
+## [2026-11-05] ingest | BD TechTalks — self-improving harnesses
+## [2026-11-05] ingest | Pesquisa web — harness e auto-evolução
+## [2026-11-05] ingest | Pesquisa web — ETL agêntico
+## [2026-11-05] ingest | Pesquisa web — esteira NTI (sem resultado)
+Criadas 8 páginas de conceito, 7 de entidade, 6 de fonte, 1 projeto, 2 sínteses, overview e index.
+Lacuna aberta: [esteira-nti](wiki/projetos/esteira-nti.md).
+
+## [2026-11-06] ingest | Slide RHAWK: ciclo de evolução orientado ao negócio
+Imagem em raw/assets/. Criadas: fonte-slide-rhawk-ciclo-evolucao, ciclo-de-evolucao-rhawk, rhawk. Atualizadas: esteira-nti, self-harness-como-etl, overview, index.
+
+## [2026-11-06] ingest | Slide RHAWK: como saber se a mudança gerou mais valor
+Criadas: fonte-slide-rhawk-avaliar-mudanca, avaliacao-atual-vs-candidata. Atualizadas: ciclo-de-evolucao-rhawk (pergunta da etapa 06 respondida em parte), gate-de-regressao, index.
+
+## [2026-11-06] ingest | Pesquisa web: avaliação, rollout, métricas e governança
+## [2026-11-06] ingest | Docs e skills oficiais LangChain/LangGraph
+Criadas: 4 conceitos, 2 entidades, 4 guias (nova categoria guias/), 1 síntese de respostas. Projeto rodável em ~/Projetos/estudo-langgraph (testado). 15 skills + 2 MCP instalados.
+
+## [2026-11-06] ingest | Sessão Orca + documentação da Esteira NTI
+Esteira NTI documentada por 3 workers Orca e empacotada como skill (github.com/buga2023/esteira-nti, privado). Criado guia-orca-orquestracao. Atualizados esteira-nti e index.
+
+## [2026-11-10] setup | Scaffold do repo Second-Brain (memory/*, índice, glossário)
+## [2026-11-10] ingest | Skill `triagem-automacao-gp` registrada em memory/projects
+## [2026-11-10] ingest | Skills `graph-engineering` (criada) e `watch` (bradautomates/claude-video), backup em skills/
+## [2026-11-10] ingest | Decisão "entrevista antes do grafo" (vídeos Maestros da IA) em memory/context
+## [2026-11-10] ingest | Conselhos do Matt Pocock (vídeo + repo mattpocock/skills)
+Plugin "Skills For Real Engineers" instalado; grilling/wayfinder/writing-for-agents citados em CLAUDE.md e graph-engineering; nota matt-pocock.md criada.
+
+## [2026-11-10] refactor | Unificação dos dois vaults
+`~/Desktop/Brain` (wiki/ + raw/) trazido para este repo. 276 wikilinks convertidos em links
+relativos (skill obsidian-notes, `--to-markdown-links`); frontmatter do wiki padronizado
+(`titulo`→`title`, `atualizado`→`date`); os dois logs fundidos aqui; CLAUDE.md do vault
+criado; lint automático em `tools/` + GitHub Action; matt-pocock movido para people/;
+notas das skills vibecode-flow, vuln-triage e prompt-engineering; glossário ampliado;
+LICENSE da skill watch incluída. `raw/` copiado byte a byte, sem edição.
 
 Related: [00-Index](00-Index.md)

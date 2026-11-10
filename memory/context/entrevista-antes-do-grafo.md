@@ -37,10 +37,11 @@ Antes de desenhar um grafo de execução (skill `graph-engineering`) ou
 rodar o `gauntlet-loop`, grilling de escopo primeiro (`wayfinder` se
 maior que uma sessão). Só escalar pra grafo/loop quando a frontier
 resolvida ainda pedir paralelismo, revisão cruzada ou várias disciplinas
-— não como primeiro instinto. Regra espelhada em `~/.claude/CLAUDE.md`
-(seção Planos).
+— não como primeiro instinto. Regra também no [CLAUDE.md](../../CLAUDE.md) do vault (a cópia em
+`~/.claude/CLAUDE.md` citada antes não existe na máquina local).
 
 ## Related
 
+- [matt-pocock](../people/matt-pocock.md)
 - [graph-engineering](../../skills/graph-engineering/SKILL.md)
 - [00-Index](../../00-Index.md)

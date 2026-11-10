@@ -20,6 +20,7 @@ aliases: [Apelido]
 ---
 ```
 
-(Vazio por enquanto — ainda sem pessoas registradas.)
+- [matt-pocock](matt-pocock.md): autor de `grilling`, `wayfinder` e
+  `writing-for-agents`; conselhos sobre Claude Code.
 
 Related: [00-Index](../../00-Index.md)

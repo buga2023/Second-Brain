@@ -9,25 +9,26 @@ tags: [meta]
 Ponto de entrada do vault. Toda nota é alcançável em até dois cliques a
 partir daqui.
 
-## Pessoas
+## Wiki (conhecimento compilado)
 
-- [memory/people](memory/people/README.md): quem é quem.
+- [wiki/index](wiki/index.md): catálogo de todas as páginas, uma linha cada.
+  Comece por aqui numa pergunta.
+- [overview](wiki/overview.md): a tese atual que conecta tudo (agentes
+  auto-evolutivos, Self-Harness, Esteira NTI).
+- [raw](raw/README.md): as fontes brutas e onde cada uma foi resumida.
 
-## Projetos
+## Memória
 
-- [memory/projects](memory/projects/README.md): projetos e automações em andamento.
+- [Pessoas](memory/people/README.md): quem é quem.
+- [Projetos](memory/projects/README.md): projetos, automações e skills próprias.
+- [Contexto](memory/context/README.md): decisões, ferramentas, processos.
+- [Glossário](memory/glossary.md): siglas, termos e codinomes.
 
-## Contexto
+## Operação
 
-- [memory/context](memory/context/README.md): empresa, ferramentas, processos.
-
-## Glossário
-
-- [memory/glossary.md](memory/glossary.md): siglas e termos internos.
-
-## Skills
-
-- [skills](skills/README.md): backup de skills do Claude Code (ex.:
-  graph-engineering).
+- [CLAUDE.md](CLAUDE.md): esquema do vault e regras de ingest, query e lint.
+- [log](log.md): histórico.
+- [skills](skills/README.md): backup de skills (graph-engineering, watch).
+- [tools](tools/README.md): lint do vault.
 
 Related: [README](README.md)

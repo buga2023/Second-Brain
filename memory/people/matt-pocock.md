@@ -1,7 +1,7 @@
 ---
 title: Matt Pocock
 date: 2026-11-10
-tags: [pessoa, context]
+tags: [pessoa]
 ---
 
 # Matt Pocock
@@ -32,13 +32,13 @@ Maestros da IA, youtube.com/watch?v=0PjtV7KtlB4)
 ## Skills dele usadas aqui
 
 - `grilling`/`grill-me`: grilling antes do grafo (ver
-  [entrevista-antes-do-grafo](entrevista-antes-do-grafo.md)).
+  [entrevista-antes-do-grafo](../context/entrevista-antes-do-grafo.md)).
 - `wayfinder`: planejamento de trabalho maior que uma sessão.
 - `writing-for-agents`: como escrever skill/CLAUDE.md (context pointers,
   leading words, pruning).
 
 ## Related
 
-- [entrevista-antes-do-grafo](entrevista-antes-do-grafo.md)
+- [entrevista-antes-do-grafo](../context/entrevista-antes-do-grafo.md)
 - [graph-engineering](../../skills/graph-engineering/SKILL.md)
 - [00-Index](../../00-Index.md)

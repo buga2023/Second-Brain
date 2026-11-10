@@ -1,6 +1,8 @@
 ---
 name: graph-engineering
 description: Desenha grafos de execução de agentes de IA especializados (nós = agentes/ferramentas/avaliadores/gates humanos, arestas = fluxo sequencial, paralelo ou condicional) e os traduz num script do Workflow tool. Use quando o usuário falar em "grafo de agentes", "graph engineering", "topologia de agentes", "orquestrar vários agentes", "quero agentes rodando em paralelo e se revisando", "desenha isso como um grafo" ou pedir pra tornar um agente/pipeline "100x melhor" distribuindo o trabalho. NÃO use para uma tarefa de um agente só, nem para memória/conhecimento persistente (isso é a skill do segundo cérebro) — "graph engineering" é termo recente (2026) e ambíguo; a primeira coisa a fazer é desambiguar qual dos três sentidos o usuário quer.
+metadata:
+  status: nao-verificado  # montada a partir do título do vídeo; ver seção Origem
 ---
 
 # Graph Engineering (grafos de execução de agentes)
