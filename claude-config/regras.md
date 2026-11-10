@@ -7,8 +7,16 @@ proponha o critério em uma linha — "pronto = <check> passando na amostra
 ## Memória
 
 - Vault Obsidian (segundo cérebro): `{{VAULT}}`, repo
-  buga2023/Second-Brain. Leia `00-Index.md` antes de perguntar algo que
-  pode já estar anotado.
+  buga2023/Second-Brain. Esquema e convenções no `CLAUDE.md` do vault.
+- **Todo projeto usa o vault, sem exceção.** Ao começar a trabalhar num
+  projeto: `git pull` no vault, ler `00-Index.md` e a nota
+  `memory/projects/<projeto>.md`. Projeto sem nota: crie a nota antes de
+  construir (o que é, onde está, como rodar) e linke em
+  `memory/projects/README.md`.
+- O `AGENTS.md` de cada repositório aponta para essa nota (skill
+  `agents-md`).
+- Decisão, pessoa, termo ou fonte nova vai para o vault na hora, não fica
+  só na conversa.
 - Ao concluir uma entrega: skill `fechar-sessao`.
 - No vault e em serviço de nuvem entram lógica, decisões e nomes de
   sistemas. Conteúdo de documento de cliente ou de contrato fica na

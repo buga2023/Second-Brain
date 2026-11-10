@@ -18,10 +18,10 @@ Fonte bruta: [raw](../../raw/2026-11-10-repos-video-ferramentas-agentes.md).
 |---|---|---|---|
 | [Humanizer](../entidades/humanizer.md) | Skill que tira as marcas de texto de IA | MIT | **instalada** ([skills/humanizer](../../skills/humanizer/SKILL.md)) |
 | Grill Me | Skill `grilling` do [Matt Pocock](../../memory/people/matt-pocock.md) | MIT | **já instalada** (plugin mattpocock-skills); regra em [entrevista-antes-do-grafo](../../memory/context/entrevista-antes-do-grafo.md) |
-| [Laya](../entidades/laya.md) | Modelo de decisão em uma passada (escolha, nota, sim/não) | Apache-2.0 | candidato, não instalado |
-| [ScrollCraft](../entidades/scroll-craft.md) | Skill de sites imersivos guiados por scroll | MIT | fora do foco; útil para site de cliente |
-| [VoiceStudio](../entidades/voicestudio.md) | Estúdio de voz local (clonagem, dublagem, transcrição) | **AGPL-3.0** | fora do foco |
-| [REA](../entidades/rea.md) (bônus) | MCP de engenharia reversa | MIT | não instalado |
+| [Laya](../entidades/laya.md) | Modelo de decisão em uma passada (escolha, nota, sim/não) | Apache-2.0 | instalado na máquina Fedora (venv `~/.local/share/venvs/laya`); ainda candidato, medir antes de usar |
+| [ScrollCraft](../entidades/scroll-craft.md) | Skill de sites imersivos guiados por scroll | MIT | instalada na máquina Fedora (`~/.claude/skills/scroll-craft`) |
+| [VoiceStudio](../entidades/voicestudio.md) | Estúdio de voz local (clonagem, dublagem, transcrição) | **AGPL-3.0** | baixado na máquina Fedora (`~/Applications`, AppImage v0.5.7) |
+| [REA](../entidades/rea.md) (bônus) | MCP de engenharia reversa | MIT | instalado na máquina Fedora (MCP + skill `reverse-engineer-anything`) |
 
 ## Leitura
 - As estrelas registradas são altas para repositórios recentes (REA:

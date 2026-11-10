@@ -74,4 +74,10 @@ achado só lido. A skill agora pede selo (reproduzido / lido / não verificado),
 topo, até 15 regras e um diagrama, e mantém fechados os arquivos de credencial. Cuidados
 com a skill watch reproduzidos no teste anotados em memory/context/inventario-skills.md.
 
+## [2026-11-10] setup | Ferramentas do vídeo instaladas e vault como regra global
+Máquina Fedora: humanizer e demais skills do vault (install.sh), ScrollCraft (symlink),
+Laya (venv), VoiceStudio (AppImage, checksum conferido), REA (MCP + skill, rea-agents 6.8.0).
+Regra nova em claude-config/regras.md: todo projeto lê e mantém sua nota no vault.
+Vault registrado no Obsidian (Flatpak).
+
 Related: [00-Index](00-Index.md)
