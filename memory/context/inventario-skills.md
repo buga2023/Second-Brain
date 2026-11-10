@@ -43,6 +43,20 @@ faltava.
 - Na máquina de trabalho existem skills locais de projeto (deploy, CAD,
   revisão de documentos) que uma sessão em nuvem não enxerga.
 
+## Cuidado com a skill watch
+
+O raio-x de teste foi feito sobre o código dela (249 testes passam) e
+reproduziu quatro comportamentos que importam:
+
+- Com o motor em `auto` (o padrão), uma chave `GEMINI_API_KEY` achada num
+  `.env` da pasta atual troca o motor para Gemini e envia o vídeo ao
+  Google. Para vídeo interno, usar `--engine local` ou gravar
+  `WATCH_ENGINE=local` em `~/.config/watch/.env`.
+- Um relatório sem nenhum frame e sem transcrição termina com código 0:
+  conferir o conteúdo, não só o sucesso do comando.
+- A opção `--fps` é ignorada sem aviso em alguns modos.
+- A detecção de cena perdeu 1 de 14 cortes num clipe sintético.
+
 ## Sobreposições e como desempatar
 
 | Assunto | Opções | Use |

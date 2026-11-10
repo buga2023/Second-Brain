@@ -48,7 +48,8 @@ proponha o critério em uma linha — "pronto = <check> passando na amostra
 
 ## Ferramentas
 
-- Vídeo ou YouTube: skill `watch`.
+- Vídeo ou YouTube: skill `watch`. Vídeo interno: sempre com
+  `--engine local`, que não envia nada para fora da máquina.
 - Texto que outra pessoa vai ler (mensagem, e-mail, apresentação): skill
   `humanizer` antes de entregar.
 - Escrever skill, `AGENTS.md` ou este arquivo: skill

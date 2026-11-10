@@ -68,4 +68,10 @@ Lista colada + metadados do GitHub em raw/. Criadas: fonte-repos-video-ferrament
 e 5 entidades (humanizer, laya, scroll-craft, voicestudio, rea), com os vereditos do
 inventario-skills. Link do ScrollCraft completado (nateherkai/scroll-craft).
 
+## [2026-11-10] lint | raio-x revisado após teste em aplicação real
+Teste com agente de contexto novo gerou 422 linhas e misturava achado reproduzido com
+achado só lido. A skill agora pede selo (reproduzido / lido / não verificado), resumo no
+topo, até 15 regras e um diagrama, e mantém fechados os arquivos de credencial. Cuidados
+com a skill watch reproduzidos no teste anotados em memory/context/inventario-skills.md.
+
 Related: [00-Index](00-Index.md)
