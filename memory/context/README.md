@@ -13,8 +13,6 @@ gauntlet-loop para validar planos).
 
 - [entrevista-antes-do-grafo](entrevista-antes-do-grafo.md): por que
   entrevistar escopo antes de desenhar grafo/loop.
-- [matt-pocock](matt-pocock.md): conselhos dele sobre Claude Code e as
-  skills (`grilling`, `wayfinder`, `writing-for-agents`) adotadas.
 - [fluxo-diario](fluxo-diario.md): qual skill entra em cada momento do
   trabalho; ler quando não souber por onde começar um pedido.
 - [como-trabalho](como-trabalho.md): padrões do meu histórico de pedidos

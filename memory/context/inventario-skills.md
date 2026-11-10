@@ -90,4 +90,4 @@ Vídeo de Enzo Barbatto (youtube.com/watch?v=DSeWjzZq7no), avaliado em
 | ScrollCraft (`nateherkai/...`, link incompleto) | Sites com animação guiada pela rolagem. | **Fora do foco** das automações; útil para sites de cliente. |
 
 Related: [fluxo-diario](fluxo-diario.md) · [skills](../../skills/README.md) ·
-[matt-pocock](matt-pocock.md) · [00-Index](../../00-Index.md)
+[matt-pocock](../people/matt-pocock.md) · [00-Index](../../00-Index.md)

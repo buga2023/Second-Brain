@@ -31,6 +31,6 @@ sobreviver a containers efêmeros. Cada pasta é uma skill completa
   b8baa17), MIT.
 - [watch](watch/SKILL.md): assiste vídeo (URL/arquivo local) via
   yt-dlp+ffmpeg ou Gemini — transcript + frames pro agente. De
-  `github.com/bradautomates/claude-video`, MIT.
+  `github.com/bradautomates/claude-video`, MIT (ver `watch/LICENSE`).
 
 Related: [00-Index](../00-Index.md)

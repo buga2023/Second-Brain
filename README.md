@@ -6,55 +6,32 @@ tags: [meta]
 
 # Second Brain
 
-Vault pessoal de memória e contexto: decisões, pessoas, projetos e termos
-que o Claude Code deve lembrar entre sessões, em vez de redescobrir ou
-perguntar de novo a cada conversa.
+Segundo cérebro do Gustavo: um wiki mantido pelo Claude (padrão LLM Wiki do
+Karpathy) mais a memória de pessoas, projetos e decisões, para que nada
+precise ser redescoberto a cada conversa. Abre como vault no Obsidian e
+renderiza no GitHub e no VS Code.
 
-Entre pelo índice: [00-Index](00-Index.md).
+Entre pelo índice: [00-Index](00-Index.md). O esquema e as regras de
+operação (ingest, query, lint) estão no [CLAUDE.md](CLAUDE.md).
 
 ## Estrutura
 
-- [memory/people](memory/people/README.md): quem é quem (nomes, apelidos, papéis).
-- [memory/projects](memory/projects/README.md): projetos e codinomes em andamento.
-- [memory/context](memory/context/README.md): fatos de contexto geral (empresa, ferramentas, processos).
-- [memory/glossary.md](memory/glossary.md): siglas, termos internos e seus significados.
+- [raw](raw/README.md): fontes brutas, imutáveis.
+- [wiki](wiki/index.md): conhecimento compilado (fontes, conceitos,
+  entidades, projetos, guias, sínteses) e a [tese atual](wiki/overview.md).
+- [memory/people](memory/people/README.md), [memory/projects](memory/projects/README.md),
+  [memory/context](memory/context/README.md), [glossário](memory/glossary.md).
 - [skills](skills/README.md): skills do Claude Code mantidas aqui.
 - [claude-config](claude-config/README.md): regras pessoais e instalador.
+- [tools](tools/README.md): lint do vault (também roda na CI).
+- [log](log.md): histórico de tudo que entrou ou mudou.
 
-## Convenção de frontmatter
+## Uso rápido
 
-Toda nota começa com:
-
-```yaml
----
-title: Nome da nota
-date: AAAA-MM-DD      # data de criação ou última revisão relevante
-tags: [pessoa]         # ou [projeto], [termo], [decisao], [meta]...
-aliases: [Apelido]     # opcional: outros nomes pelos quais a nota é conhecida
----
+```
+python3 tools/vault_lint.py . --exclude skills tools   # saúde do vault
+bash claude-config/install.sh                          # instala skills e regras em ~/.claude
+grep "^## \[" log.md | tail -5                          # últimas mudanças
 ```
 
-## Convenção de links
-
-- Links relativos em Markdown (`[Nome](caminho/arquivo.md)`), não wikilinks —
-  assim o vault renderiza certo no GitHub, no VS Code e no Obsidian.
-- Toda nota termina com uma linha `Related:` apontando para notas que ela
-  usa, contradiz ou substitui.
-- Toda pasta tem um índice (`README.md`) listando o que está dentro.
-
-## Como usar (para o Claude)
-
-Segue o padrão de "LLM wiki" do Karpathy (gist
-`karpathy/442a6bf555914893e9891c11519de94f`): três camadas — fontes brutas
-(imutáveis, nunca editadas), este wiki (que eu mantenho) e o esquema
-(este README + o CLAUDE.md global). Três operações:
-
-1. **Ingest** — ao chegar informação nova (pessoa, projeto, decisão,
-   termo), não deixe só na conversa: atualize a(s) nota(s) relevante(s),
-   linke do índice da pasta, e acrescente uma linha em [log.md](log.md).
-2. **Query** — antes de perguntar de novo, leia [00-Index.md](00-Index.md)
-   primeiro; ele aponta para a nota certa sem precisar vasculhar tudo.
-3. **Lint** — de tempos em tempos, rode o lint do vault (contradições,
-   notas órfãs, links quebrados) em vez de deixar degradar.
-
-Related: [00-Index](00-Index.md)
+Related: [00-Index](00-Index.md) · [CLAUDE.md](CLAUDE.md)

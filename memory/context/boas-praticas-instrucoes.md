@@ -81,4 +81,4 @@ próximo é lido por último.
 instrução velha ou contraditória; `/init` gera um ponto de partida.
 
 Related: [claude-config](../../claude-config/README.md) ·
-[matt-pocock](matt-pocock.md) · [00-Index](../../00-Index.md)
+[matt-pocock](../people/matt-pocock.md) · [00-Index](../../00-Index.md)

@@ -1,0 +1,14 @@
+name: vault-lint
+on:
+  push:
+  pull_request:
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Lint do vault (links, órfãs, índices, frontmatter)
+        run: python3 tools/vault_lint.py . --exclude skills tools

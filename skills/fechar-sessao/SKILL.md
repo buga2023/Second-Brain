@@ -49,7 +49,7 @@ O caminho do vault está nas instruções globais (Second-Brain). Leia
 - **Decisão** — `memory/context/<assunto>.md`, com o motivo.
 - **Pessoa** nova — `memory/people/`, nome e papel.
 - **Termo** novo — `memory/glossary.md`.
-- **Log** — uma linha `AAAA-MM-DD — <evento>` em `log.md`.
+- **Log** — uma entrada `## [AAAA-MM-DD] operação | título` em `log.md` (formato no `CLAUDE.md`).
 
 Toda nota nova entra no índice da pasta. No vault entram lógica,
 decisões e nomes de sistemas; conteúdo de documento de cliente ou de
