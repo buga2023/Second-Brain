@@ -22,6 +22,8 @@ Hopper, Ghidra ou IDA já instalados.
 ## Onde encaixa aqui
 Par natural da [vuln-triage](../../memory/projects/vuln-triage.md):
 confirmar se uma vulnerabilidade é alcançável num binário de terceiros.
-**Status:** não instalado.
+**Status:** não instalado. Para app próprio com código-fonte, a skill
+`raio-x` resolve; o REA só entra para software sem fonte que se possa
+examinar com autorização.
 
 Related: [fonte-repos-video-ferramentas-agentes](../fontes/fonte-repos-video-ferramentas-agentes.md)

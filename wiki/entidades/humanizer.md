@@ -22,6 +22,8 @@ e discutir com ninguém ("não estou dizendo que...").
 
 ## Onde encaixa aqui
 Revisão final dos textos das skills de LinkedIn (post-writer,
-newsletter-voice) e do doc-drafter. **Status:** não instalada.
+newsletter-voice) e do doc-drafter. **Status:** instalada em
+[skills/humanizer](../../skills/humanizer/SKILL.md); a regra pessoal manda
+passar por ela todo texto que outra pessoa vai ler.
 
 Related: [fonte-repos-video-ferramentas-agentes](../fontes/fonte-repos-video-ferramentas-agentes.md)

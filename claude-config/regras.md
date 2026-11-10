@@ -49,5 +49,7 @@ proponha o critério em uma linha — "pronto = <check> passando na amostra
 ## Ferramentas
 
 - Vídeo ou YouTube: skill `watch`.
+- Texto que outra pessoa vai ler (mensagem, e-mail, apresentação): skill
+  `humanizer` antes de entregar.
 - Escrever skill, `AGENTS.md` ou este arquivo: skill
   `writing-for-agents` antes.

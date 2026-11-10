@@ -47,6 +47,7 @@ flowchart TD
 | Repositório sem instruções | `agents-md` | `AGENTS.md` e `CLAUDE.md` que o importa |
 | Terminei | `fechar-sessao` | Entrega rodada, explicação, nota no vault |
 | Preciso do conteúdo de um vídeo | `watch` | Transcrição e frames |
+| Texto que outra pessoa vai ler | `humanizer` | O mesmo conteúdo, sem tiques de IA |
 | Bug difícil | `diagnosing-bugs` | Laço de diagnóstico até teste de regressão |
 | Funcionalidade com teste primeiro | `tdd` | Vermelho, verde, refatora |
 

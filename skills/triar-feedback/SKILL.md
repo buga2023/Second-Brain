@@ -81,7 +81,8 @@ conversa.
 Mensagem pronta para o usuário colar, no tom dele (curta, informal, em
 português): qual era a causa, o que mudou, o que a pessoa precisa fazer
 (qual versão carregar) e o que mandar se acontecer de novo (o arquivo e
-a versão que aparece na saída).
+a versão que aparece na saída). Passe o rascunho pela skill `humanizer`
+antes de entregar.
 
 Pronto quando: há uma resposta para cada pessoa que reportou, cobrindo
 todos os itens dela.

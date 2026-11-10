@@ -26,6 +26,9 @@ sobreviver a containers efêmeros. Cada pasta é uma skill completa
   repositório, explica e registra neste vault.
 - [agents-md](agents-md/SKILL.md): gera `AGENTS.md` lendo o repositório;
   modelo em [MODELO](agents-md/MODELO.md).
+- [humanizer](humanizer/SKILL.md): reescreve texto com cara de IA sem
+  mudar o que ele diz. De `github.com/blader/humanizer` (v3.1.0, commit
+  b8baa17), MIT.
 - [watch](watch/SKILL.md): assiste vídeo (URL/arquivo local) via
   yt-dlp+ffmpeg ou Gemini — transcript + frames pro agente. De
   `github.com/bradautomates/claude-video`, MIT (ver `watch/LICENSE`).

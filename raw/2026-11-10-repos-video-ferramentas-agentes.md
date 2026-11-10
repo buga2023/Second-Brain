@@ -1,6 +1,6 @@
 ---
-fonte: Lista de repositórios de um vídeo (colada pelo Gustavo; vídeo não identificado)
-url: n/a
+fonte: Lista de repositórios do vídeo "Instalei esses repositórios no Claude Code" (Enzo Barbatto), colada pelo Gustavo
+url: https://www.youtube.com/watch?v=DSeWjzZq7no
 tipo: lista
 capturado: 2026-11-10
 ---

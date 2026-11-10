@@ -16,6 +16,12 @@ descobre em que estado está, faz o que cabe e para no próximo portão.
    **próxima ação** — até 3 passos, com o dado que espera de volta.
 6. Parar. Um estado por sessão, salvo quando o portão passa na hora.
 
+A sessão seguinte começa quando a evidência do portão chega: o usuário
+abre o Claude no repositório, cola o que a pessoa devolveu e diz "segue
+o LOOP_PLAN". Para não depender de lembrar, uma tarefa agendada diária
+lê o plano e cobra o portão pendente. Um estado em que o agente trabalha
+sozinho até um check pode ser, por dentro, um `/goal`.
+
 ## Modelo de plano
 
 ```markdown
