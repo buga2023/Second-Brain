@@ -8,16 +8,24 @@ tags: [meta]
 
 Backup de skills do Claude Code criadas pelo usuário ou pelo Claude, para
 sobreviver a containers efêmeros. Cada pasta é uma skill completa
-(`SKILL.md` + assets). Para instalar numa máquina nova, rode
-`skills/install.sh`: ele cria symlinks em `~/.claude/skills/`, e um
-`git pull` no vault já atualiza a skill.
+(`SKILL.md` + arquivos de referência); o instalador em
+[claude-config](../claude-config/README.md) copia todas para
+`~/.claude/skills/`.
 
-As skills que vivem no claude.ai (`anthropic-skills:*`) não ficam aqui;
-cada uma tem uma nota em [memory/projects](../memory/projects/README.md).
-
-- [graph-engineering](graph-engineering/SKILL.md): desenha grafos de
-  execução de agentes (nós/arestas) e traduz para o Workflow tool.
-  **Não verificada**: montada a partir do título do vídeo.
+- [raio-x](raio-x/SKILL.md): mapa da lógica de uma aplicação, pontos
+  frágeis e melhorias priorizadas.
+- [triar-feedback](triar-feedback/SKILL.md): classifica feedback
+  repassado antes de corrigir e redige a resposta.
+- [desenhar-loop](desenhar-loop/SKILL.md): condição de parada, motor,
+  teto e portões humanos; referências em
+  [MOTORES](desenhar-loop/MOTORES.md) e [ESTADOS](desenhar-loop/ESTADOS.md).
+- [graph-engineering](graph-engineering/SKILL.md): grafo de agentes;
+  referências em [PADROES](graph-engineering/PADROES.md) e
+  [MODELOS](graph-engineering/MODELOS.md).
+- [fechar-sessao](fechar-sessao/SKILL.md): roda a entrega do
+  repositório, explica e registra neste vault.
+- [agents-md](agents-md/SKILL.md): gera `AGENTS.md` lendo o repositório;
+  modelo em [MODELO](agents-md/MODELO.md).
 - [watch](watch/SKILL.md): assiste vídeo (URL/arquivo local) via
   yt-dlp+ffmpeg ou Gemini — transcript + frames pro agente. De
   `github.com/bradautomates/claude-video`, MIT (ver `watch/LICENSE`).

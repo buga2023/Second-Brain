@@ -7,7 +7,7 @@ date: 2026-11-06
 ---
 # Esteira NTI
 
-> **Documentada em 06/11/2026.** Definição de trabalho: a esteira de evolução contínua de agentes de IA, orientada a negócio, que junta o [ciclo-de-evolucao-rhawk](../conceitos/ciclo-de-evolucao-rhawk.md), a [avaliacao-atual-vs-candidata](../conceitos/avaliacao-atual-vs-candidata.md), o [self-harness](../conceitos/self-harness.md), o [etl-agentico](../conceitos/etl-agentico.md) e LangChain/LangGraph. Sigla NTI ainda sem definição.
+> **Documentada em 06/11/2026.** Definição de trabalho: a esteira de evolução contínua de agentes de IA, orientada a negócio, que junta o [ciclo-de-evolucao-rhawk](../conceitos/ciclo-de-evolucao-rhawk.md), a [avaliacao-atual-vs-candidata](../conceitos/avaliacao-atual-vs-candidata.md), o [self-harness](../conceitos/self-harness.md), o [etl-agentico](../conceitos/etl-agentico.md) e LangChain/LangGraph. NTI é o setor de TI da GP ([glossário](../../memory/glossary.md)).
 >
 > - **Repositório/skill:** `~/Projetos/esteira-nti` → github.com/buga2023/esteira-nti (privado). Instalada como skill global `esteira-nti` (symlink em `~/.claude/skills/`).
 > - **Estrutura:** `SKILL.md` · `references/01–13` (visão, ciclo, avaliação, governança, rollout, métricas, arquitetura, LangGraph, LangChain, LangSmith, runbook, glossário, perguntas abertas) · `templates/` (proposta, checklist do gate, politica.yaml, registro de decisão, RACI) · `scripts/` (ciclo em LangGraph, 9 testes passando).

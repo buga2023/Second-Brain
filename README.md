@@ -21,7 +21,8 @@ operação (ingest, query, lint) estão no [CLAUDE.md](CLAUDE.md).
   entidades, projetos, guias, sínteses) e a [tese atual](wiki/overview.md).
 - [memory/people](memory/people/README.md), [memory/projects](memory/projects/README.md),
   [memory/context](memory/context/README.md), [glossário](memory/glossary.md).
-- [skills](skills/README.md): backup de skills locais e `install.sh`.
+- [skills](skills/README.md): skills do Claude Code mantidas aqui.
+- [claude-config](claude-config/README.md): regras pessoais e instalador.
 - [tools](tools/README.md): lint do vault (também roda na CI).
 - [log](log.md): histórico de tudo que entrou ou mudou.
 
@@ -29,7 +30,7 @@ operação (ingest, query, lint) estão no [CLAUDE.md](CLAUDE.md).
 
 ```
 python3 tools/vault_lint.py . --exclude skills tools   # saúde do vault
-skills/install.sh                                      # instala as skills do backup
+bash claude-config/install.sh                          # instala skills e regras em ~/.claude
 grep "^## \[" log.md | tail -5                          # últimas mudanças
 ```
 

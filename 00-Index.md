@@ -28,7 +28,12 @@ partir daqui.
 
 - [CLAUDE.md](CLAUDE.md): esquema do vault e regras de ingest, query e lint.
 - [log](log.md): histórico.
-- [skills](skills/README.md): backup de skills (graph-engineering, watch).
+- [skills](skills/README.md): skills do Claude Code (raio-x, desenhar-loop,
+  graph-engineering, triar-feedback, fechar-sessao, agents-md, watch).
+- [claude-config](claude-config/README.md): regras pessoais e instalador
+  das skills para a máquina de trabalho.
+- [fluxo-diario](memory/context/fluxo-diario.md): qual skill usar em
+  cada momento.
 - [tools](tools/README.md): lint do vault.
 
 Related: [README](README.md)

@@ -43,6 +43,11 @@ Esteira NTI documentada por 3 workers Orca e empacotada como skill (github.com/b
 ## [2026-11-10] ingest | Conselhos do Matt Pocock (vídeo + repo mattpocock/skills)
 Plugin "Skills For Real Engineers" instalado; grilling/wayfinder/writing-for-agents citados em CLAUDE.md e graph-engineering; nota matt-pocock.md criada.
 
+## [2026-11-10] ingest | Análise do histórico de sessões
+Criadas as skills raio-x, triar-feedback, desenhar-loop, fechar-sessao, agents-md e
+graph-engineering v2; claude-config com regras e instalador; notas fluxo-diario,
+como-trabalho, inventario-skills e boas-praticas-instrucoes.
+
 ## [2026-11-10] refactor | Unificação dos dois vaults
 `~/Desktop/Brain` (wiki/ + raw/) trazido para este repo. 276 wikilinks convertidos em links
 relativos (skill obsidian-notes, `--to-markdown-links`); frontmatter do wiki padronizado

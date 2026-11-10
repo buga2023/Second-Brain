@@ -7,7 +7,7 @@ tags: [meta]
 # Pessoas
 
 Quem é quem: nome, apelido, papel, e como/por que aparece no trabalho.
-Uma nota por pessoa (ex.: `manuela.md`), linkada aqui conforme for criada.
+Uma nota por pessoa (ex.: `nome.md`), linkada aqui conforme for criada.
 
 Modelo de nota:
 

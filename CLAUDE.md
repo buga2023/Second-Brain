@@ -22,7 +22,8 @@ termos técnicos consagrados em inglês (harness, trace, ETL).
 - `memory/`: o que lembrar entre sessões. `people/` (uma nota por pessoa),
   `projects/` (projetos e skills próprias), `context/` (decisões e
   convenções), `glossary.md` (siglas e codinomes).
-- `skills/`: backup de skills locais (`install.sh` instala). `tools/`: lint.
+- `skills/`: skills do Claude Code (`claude-config/install.sh` instala, junto
+  com as regras pessoais). `tools/`: lint.
 - `00-Index.md` é a entrada; `log.md` é o histórico único.
 
 ## Convenções
