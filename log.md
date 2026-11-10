@@ -24,5 +24,11 @@ Formato: `AAAA-MM-DD — evento`.
   graph-engineering v2; claude-config com regras e instalador; notas
   fluxo-diario, como-trabalho, inventario-skills e
   boas-praticas-instrucoes.
+2026-11-10 — Ingest: repositórios do vídeo de Enzo Barbatto avaliados;
+  humanizer instalado, laya registrado como candidato, veredito dos
+  demais em inventario-skills.
+2026-11-10 — Lint: desenhar-loop revisado após teste com agente de
+  contexto novo (tipos de loop, ambiente de execução, armadilhas dos
+  motores).
 
 Related: [00-Index](00-Index.md)

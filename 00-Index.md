@@ -29,7 +29,7 @@ partir daqui.
 
 - [skills](skills/README.md): skills do Claude Code (raio-x,
   desenhar-loop, graph-engineering, triar-feedback, fechar-sessao,
-  agents-md, watch).
+  agents-md, humanizer, watch).
 
 ## Configuração do Claude
 
