@@ -25,4 +25,9 @@ partir daqui.
 
 - [memory/glossary.md](memory/glossary.md): siglas e termos internos.
 
+## Skills
+
+- [skills](skills/README.md): backup de skills do Claude Code (ex.:
+  graph-engineering).
+
 Related: [README](README.md)
