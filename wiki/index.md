@@ -40,6 +40,11 @@ Ponto de entrada: [overview](overview.md) · Histórico: [log](../log.md) · Fon
 - [observabilidade-de-traces](conceitos/observabilidade-de-traces.md) — trace é matéria-prima da auto-evolução.
 
 ## Entidades
+- [laya](entidades/laya.md): decisão em uma passada (escolha, nota, sim/não) com abstenção calibrada; candidato a gate/roteador.
+- [humanizer](entidades/humanizer.md): skill que tira as marcas de texto escrito por IA.
+- [scroll-craft](entidades/scroll-craft.md): skill de sites imersivos guiados por scroll.
+- [voicestudio](entidades/voicestudio.md): estúdio de voz local (clonagem, dublagem, transcrição); AGPL.
+- [rea](entidades/rea.md): MCP de engenharia reversa (binários, Electron, .NET, web).
 - [langsmith](entidades/langsmith.md): tracing, datasets, pairwise, avaliadores online.
 - [deep-agents](entidades/deep-agents.md): camada harness da LangChain (plano, arquivos, subagentes).
 - [rhawk](entidades/rhawk.md): rhawk.pro, autora do ciclo de evolução (relação a confirmar).
@@ -52,6 +57,7 @@ Ponto de entrada: [overview](overview.md) · Histórico: [log](../log.md) · Fon
 - [survey-gao-tmlr-2026](entidades/survey-gao-tmlr-2026.md) — survey de referência do campo.
 
 ## Fontes
+- [fonte-repos-video-ferramentas-agentes](fontes/fonte-repos-video-ferramentas-agentes.md): 6 repos de um vídeo (Humanizer, Grill Me, Laya, ScrollCraft, VoiceStudio, REA).
 - [fonte-docs-langchain-langgraph](fontes/fonte-docs-langchain-langgraph.md): skills oficiais e docs, versões atuais.
 - [fonte-pesquisa-avaliacao-governanca](fontes/fonte-pesquisa-avaliacao-governanca.md): avaliação, rollout, métricas, governança.
 - [fonte-slide-rhawk-avaliar-mudanca](fontes/fonte-slide-rhawk-avaliar-mudanca.md): slide "como saber se a mudança gerou mais valor".

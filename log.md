@@ -56,4 +56,9 @@ criado; lint automático em `tools/` + GitHub Action; matt-pocock movido para pe
 notas das skills vibecode-flow, vuln-triage e prompt-engineering; glossário ampliado;
 LICENSE da skill watch incluída. `raw/` copiado byte a byte, sem edição.
 
+## [2026-11-10] ingest | Repositórios do vídeo: ferramentas para agentes
+Lista colada (Humanizer, Grill Me, Laya, ScrollCraft, VoiceStudio, REA) + metadados do GitHub.
+Criadas: fonte-repos-video-ferramentas-agentes e 5 entidades (humanizer, laya, scroll-craft,
+voicestudio, rea). Grill Me já estava coberto (matt-pocock). Nada instalado.
+
 Related: [00-Index](00-Index.md)

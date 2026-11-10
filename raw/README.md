@@ -24,5 +24,6 @@ imagens vão em `assets/`. O resumo de cada fonte fica em
 | [Pesquisa web: avaliação e governança](2026-11-06-pesquisa-web-avaliacao-governanca.md) | pesquisa-web | [fonte-pesquisa-avaliacao-governanca](../wiki/fontes/fonte-pesquisa-avaliacao-governanca.md) |
 | [Docs e skills LangChain/LangGraph](2026-11-06-docs-langchain-langgraph-skills.md) | documentação | [fonte-docs-langchain-langgraph](../wiki/fontes/fonte-docs-langchain-langgraph.md) |
 | [Sessão Orca: orquestração](2026-11-06-sessao-orca-orquestracao.md) | experiência | [guia-orca-orquestracao](../wiki/guias/guia-orca-orquestracao.md) |
+| [Repositórios do vídeo: ferramentas para agentes](2026-11-10-repos-video-ferramentas-agentes.md) | lista | [fonte-repos-video-ferramentas-agentes](../wiki/fontes/fonte-repos-video-ferramentas-agentes.md) |
 
 Related: [00-Index](../00-Index.md) · [wiki](../wiki/index.md)
