@@ -6,10 +6,38 @@ description: Desenha grafos de execução de agentes de IA especializados (nós 
 # Graph Engineering (grafos de execução de agentes)
 
 Origem: vídeo "Torne seus Agentes 100x Melhores com Graph Engineering"
-(canal Maestros da IA, youtube.com/@maestrosdaia). O termo não tem
-transcrição confirmada nesta skill — ela foi montada a partir do título,
-do canal e de pesquisa cruzada sobre o estado atual do termo. Se o vídeo
+(canal Maestros da IA, youtube.com/@maestrosdaia). A transcrição desse
+vídeo só pôde ser lida parcialmente (o YouTube bloqueou a maior parte das
+tentativas de download como bot); o trecho lido confirma que o canal tem
+apps próprios — "Graph Builder" (mais controle manual) e "Loops e Graphs"
+(descreve em linguagem natural e ele monta o grafo) — e recomenda começar
+pelo segundo. O resto desta skill foi montado a partir do título, do
+canal e de pesquisa cruzada sobre o estado atual do termo. Se o vídeo
 disser algo diferente do que está aqui, corrija este arquivo.
+
+## Passo -1 — grilling antes do grafo
+
+Dois grafos diferentes tentam resolver o mesmo problema; não confunda:
+
+- **Grafo de planejamento** (decisões ainda não tomadas) → `grilling`/
+  `grill-me` (Matt Pocock): frontier da design tree em rounds, pergunta
+  numerada + resposta recomendada, fatos via subagente, decisões vão pro
+  usuário. Para trabalho maior que uma sessão, `wayfinder`: mapa de
+  tickets de decisão, frontier = tickets destravados, fog of war pro que
+  ainda não é ticketável.
+- **Grafo de execução** (trabalho já decidido, a construir) → o resto
+  desta skill.
+
+O grilling vem primeiro **sempre**, e pode ser suficiente por si só: dado
+real do canal Maestros da IA (vídeo "Diretriz",
+youtube.com/watch?v=bKI-YvBuu2Y) — grilling de baixa fricção (resposta
+recomendada de um clique) fechou um MVP em ~1h30/100k tokens; o mesmo
+canal diz que via gauntlet-loop/grafo teria sido "mais complexo e com
+muito mais tokens" pro mesmo resultado. Escopo mal definido na frontier
+("para o mercado", "todas as features do X") é o que mais infla custo.
+Só desenhe um grafo de execução (Passo 0 em diante) se a frontier
+resolvida ainda pedir paralelismo genuíno, revisão cruzada ou várias
+disciplinas — nunca como primeiro instinto.
 
 ## Passo 0 — desambiguar
 
@@ -104,6 +132,11 @@ que o usuário revisa e corrige.
 ## Referências
 
 - Vídeo de origem: youtube.com/watch?v=r8JueeaKJ9w (Maestros da IA)
+- Grilling antes do grafo: youtube.com/watch?v=bKI-YvBuu2Y, "Diretriz"
+  (Maestros da IA) — comparação de custo real contra grafo/loop
+- Grafo de planejamento: skills `grilling`/`grill-me`/`wayfinder` (Matt
+  Pocock, plugin "Skills For Real Engineers")
 - Técnica de validação: github.com/robonuggets/gauntlet-loop
 - Padrão de portões: skill `triagem-automacao-gp` (G1–G5)
 - Execução real: skill `workflow-authoring`
+- Como escrever esta skill: `writing-for-agents` (Matt Pocock)
