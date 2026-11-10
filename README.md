@@ -18,6 +18,8 @@ Entre pelo índice: [00-Index](00-Index.md).
 - [memory/projects](memory/projects/README.md): projetos e codinomes em andamento.
 - [memory/context](memory/context/README.md): fatos de contexto geral (empresa, ferramentas, processos).
 - [memory/glossary.md](memory/glossary.md): siglas, termos internos e seus significados.
+- [skills](skills/README.md): skills do Claude Code mantidas aqui.
+- [claude-config](claude-config/README.md): regras pessoais e instalador.
 
 ## Convenção de frontmatter
 

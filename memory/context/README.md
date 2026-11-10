@@ -15,5 +15,13 @@ gauntlet-loop para validar planos).
   entrevistar escopo antes de desenhar grafo/loop.
 - [matt-pocock](matt-pocock.md): conselhos dele sobre Claude Code e as
   skills (`grilling`, `wayfinder`, `writing-for-agents`) adotadas.
+- [fluxo-diario](fluxo-diario.md): qual skill entra em cada momento do
+  trabalho; ler quando não souber por onde começar um pedido.
+- [como-trabalho](como-trabalho.md): padrões do meu histórico de pedidos
+  e onde o trabalho travava; a razão das regras atuais.
+- [inventario-skills](inventario-skills.md): todas as skills, onde se
+  sobrepõem e como desempatar.
+- [boas-praticas-instrucoes](boas-praticas-instrucoes.md): regras de
+  `CLAUDE.md` e `AGENTS.md`; ler antes de escrever instrução para agente.
 
 Related: [00-Index](../../00-Index.md)

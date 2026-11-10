@@ -1,142 +1,94 @@
 ---
 name: graph-engineering
-description: Desenha grafos de execução de agentes de IA especializados (nós = agentes/ferramentas/avaliadores/gates humanos, arestas = fluxo sequencial, paralelo ou condicional) e os traduz num script do Workflow tool. Use quando o usuário falar em "grafo de agentes", "graph engineering", "topologia de agentes", "orquestrar vários agentes", "quero agentes rodando em paralelo e se revisando", "desenha isso como um grafo" ou pedir pra tornar um agente/pipeline "100x melhor" distribuindo o trabalho. NÃO use para uma tarefa de um agente só, nem para memória/conhecimento persistente (isso é a skill do segundo cérebro) — "graph engineering" é termo recente (2026) e ambíguo; a primeira coisa a fazer é desambiguar qual dos três sentidos o usuário quer.
+description: Grafo de execução de agentes — escolhe o padrão (encadeamento, roteamento, paralelo, orquestrador, avaliador-otimizador), desenha nós e arestas e entrega o script do Workflow tool. Use quando o usuário pedir vários agentes trabalhando juntos, revisão cruzada entre agentes, ou disser "grafo". Um agente só repetindo até uma condição é a skill desenhar-loop.
 ---
 
-# Graph Engineering (grafos de execução de agentes)
+# Graph engineering
 
-Origem: vídeo "Torne seus Agentes 100x Melhores com Graph Engineering"
-(canal Maestros da IA, youtube.com/@maestrosdaia). A transcrição desse
-vídeo só pôde ser lida parcialmente (o YouTube bloqueou a maior parte das
-tentativas de download como bot); o trecho lido confirma que o canal tem
-apps próprios — "Graph Builder" (mais controle manual) e "Loops e Graphs"
-(descreve em linguagem natural e ele monta o grafo) — e recomenda começar
-pelo segundo. O resto desta skill foi montado a partir do título, do
-canal e de pesquisa cruzada sobre o estado atual do termo. Se o vídeo
-disser algo diferente do que está aqui, corrija este arquivo.
+Um **grafo de execução** distribui um trabalho já decidido entre agentes:
+**nós** fazem, **arestas** dizem para onde o resultado vai. Decisão ainda
+aberta pertence ao grilling (ou `wayfinder`, se não cabe numa sessão) —
+feche-a antes do passo 1.
 
-## Passo -1 — grilling antes do grafo
+## 1. Prove que precisa de grafo
 
-Dois grafos diferentes tentam resolver o mesmo problema; não confunda:
+Um grafo se paga quando ao menos uma destas é verdade:
 
-- **Grafo de planejamento** (decisões ainda não tomadas) → `grilling`/
-  `grill-me` (Matt Pocock): frontier da design tree em rounds, pergunta
-  numerada + resposta recomendada, fatos via subagente, decisões vão pro
-  usuário. Para trabalho maior que uma sessão, `wayfinder`: mapa de
-  tickets de decisão, frontier = tickets destravados, fog of war pro que
-  ainda não é ticketável.
-- **Grafo de execução** (trabalho já decidido, a construir) → o resto
-  desta skill.
+- **Paralelismo real** — partes independentes, nenhuma espera a outra.
+- **Olhar independente** — o resultado pede um crítico que não viu como
+  foi feito.
+- **Disciplinas distintas** — cada parte exige regra ou contexto que as
+  outras não têm.
+- **Escala** — a mesma operação em N itens que não cabem num contexto.
 
-O grilling vem primeiro **sempre**, e pode ser suficiente por si só: dado
-real do canal Maestros da IA (vídeo "Diretriz",
-youtube.com/watch?v=bKI-YvBuu2Y) — grilling de baixa fricção (resposta
-recomendada de um clique) fechou um MVP em ~1h30/100k tokens; o mesmo
-canal diz que via gauntlet-loop/grafo teria sido "mais complexo e com
-muito mais tokens" pro mesmo resultado. Escopo mal definido na frontier
-("para o mercado", "todas as features do X") é o que mais infla custo.
-Só desenhe um grafo de execução (Passo 0 em diante) se a frontier
-resolvida ainda pedir paralelismo genuíno, revisão cruzada ou várias
-disciplinas — nunca como primeiro instinto.
+Nenhuma delas: recomende um build único com check (ou `desenhar-loop`) e
+diga por quê. Cada nó custa tokens e é mais um ponto de falha.
 
-## Passo 0 — desambiguar
+Pronto quando: existe a frase "grafo porque <motivo da lista>", ou a
+recomendação de não usar foi entregue ao usuário.
 
-"Graph engineering" para agentes de IA não tem um sentido único em 2026.
-Pergunte ou infira qual destes o usuário quer, porque o desenho é diferente:
+## 2. Defina a barra
 
-| Sentido | O que é | Quando é isso |
-|---|---|---|
-| **Grafo de execução/orquestração** (o mais comum e o que esta skill cobre) | Nós = agentes, ferramentas, avaliadores, decisões humanas; arestas = fluxo | "quero vários agentes especializados", "etapas em paralelo", "revisão cruzada" |
-| **Grafo de loops** | Vários loops de agente interagindo entre si | "um agente aciona outro loop que aciona outro" |
-| **Grafo de conhecimento/memória** | Relações explícitas e consultáveis entre fatos | Isso é memória persistente → use a skill do segundo cérebro (Obsidian), não esta |
+A **barra** é a referência concreta contra a qual um crítico dá veredito
+binário: um gabarito, um comando que sai 0, um documento-modelo, uma
+tela de referência.
 
-O resto deste arquivo cobre o grafo de execução/orquestração.
+Pronto quando: a barra tem nome e o crítico consegue abri-la ou rodá-la
+sozinho.
 
-## Passo 1 — a barra antes da topologia
+## 3. Escolha o padrão
 
-Antes de desenhar nó nenhum, defina o que "melhor" quer dizer aqui: uma
-barra de qualidade concreta e comparável (técnica do gauntlet-loop,
-github.com/robonuggets/gauntlet-loop). Grafo sem barra é só mais
-paralelismo gastando mais tokens sem critério de vitória.
+| O trabalho é... | Padrão |
+|---|---|
+| Etapas fixas, cada uma usa a saída da anterior | Encadeamento |
+| Entradas de tipos diferentes, cada tipo com tratamento próprio | Roteamento |
+| Partes independentes, ou a mesma operação em N itens | Paralelo |
+| Subtarefas que só dá para conhecer depois de olhar o problema | Orquestrador |
+| Dá para criticar contra a barra e a crítica melhora o resultado | Avaliador-otimizador |
 
-## Passo 2 — os nós (quem faz o quê)
+Definição, quando evitar e como combinar: [PADROES.md](PADROES.md).
 
-Quebre a tarefa em papéis distintos, não em pedaços arbitrários. Tipos de
-nó recorrentes:
+Pronto quando: um padrão (ou combinação) está escolhido e o motivo cabe
+em uma linha.
 
-- **Builder** — produz o artefato (código, texto, plano).
-- **Critic/evaluator** — contexto novo, nunca viu como o builder decidiu,
-  veredito binário contra a barra (não nota — nota vicia para cima com o
-  tempo).
-- **Gate/portão** — checagem determinística de pré-requisito antes de
-  deixar passar (o padrão G1–G5 da skill `triagem-automacao-gp` é um bom
-  modelo: nomeie o critério, torne-o verificável, BLOQUEADO se faltar).
-- **Especialista de domínio** — sabe a regra que o builder não sabe
-  (ex.: a regra da disciplina de engenharia).
-- **Humano** — aprova o que não pode ser automatizado sem risco.
+## 4. Desenhe nós e arestas
 
-Cada nó deve ter uma única responsabilidade. Nó que builda e critica a
-própria coisa não é um nó, é um self-review disfarçado de grafo.
+Uma linha por nó, antes de qualquer código:
 
-## Passo 3 — as arestas (como o trabalho flui)
+| Nó | Papel | Recebe | Devolve | Vai para |
+|---|---|---|---|---|
 
-- **Sequencial (pipeline)** — saída de um nó é entrada do próximo.
-- **Paralelo** — nós independentes, mesma entrada ou entradas disjuntas,
-  sem motivo para esperar um pelo outro.
-- **Condicional/roteamento** — a saída de um nó decide qual nó roda a
-  seguir (ex.: veredito BLOQUEADO → vai para nó de perguntas; APTO → vai
-  para nó de plano).
-- **Loop com saída** — builder ↔ critic repete até o critic aprovar ou
-  até um limite; nunca número fixo de rounds, sempre condição de saída.
+Papéis:
 
-Desenhe o grafo em uma tabela ou lista antes de qualquer código: nó,
-papel, entrada, saída, para onde vai depois. Se não cabe em meia página,
-o grafo provavelmente está fazendo duas coisas e devia ser dois grafos.
+- **Builder** — produz o artefato.
+- **Crítico** — contexto novo, nunca viu o raciocínio do builder; devolve
+  veredito binário contra a barra, com evidência.
+- **Portão** — checagem determinística de pré-requisito; bloqueia se
+  faltar (modelo: G1–G5 da `triagem-automacao-gp`).
+- **Especialista** — carrega a regra de domínio que o builder não tem.
+- **Humano** — aprova o que não se automatiza sem risco.
 
-## Passo 4 — traduzir para execução
+Cada nó tem uma responsabilidade. Todo ciclo (builder ↔ crítico) tem
+condição de saída e um **teto** de rodadas; o teto é disjuntor — bater
+nele é falha a relatar.
 
-Em Claude Code, o motor de grafo de execução é o **Workflow tool**
-(`agent()`, `parallel()`, `pipeline()`, `phase()`) — carregue a skill
-`workflow-authoring` antes de escrever o script. Mapeamento direto:
+Pronto quando: todo nó tem as cinco colunas preenchidas, todo ciclo tem
+saída e teto, e a tabela cabe em meia página (maior que isso: são dois
+grafos).
 
-- nó sequencial → `agent()` dentro de um `pipeline()`
-- nós paralelos → `parallel([...])`
-- critic/evaluator → `agent()` com prompt de veredito binário, schema
-  tipado, sem ver o contexto do builder
-- gate → checagem antes do próximo `agent()`/`pipeline()`, ou um
-  `agent()` dedicado que só retorna aprovado/bloqueado
+## 5. Traduza para execução
 
-O Workflow tool só roda com opt-in explícito do usuário (`ultracode` ou
-pedido direto por "workflow"/orquestração multiagente) — nunca acione
-sozinho por achar que o grafo "ficaria melhor assim". Para uma tarefa
-menor, a mesma topologia funciona só com `Agent` (subagentes) descrita em
-texto, sem precisar do Workflow tool.
+Adapte um modelo de [MODELOS.md](MODELOS.md) e carregue a skill
+`workflow-authoring` para a API. O Workflow tool roda com opt-in do
+usuário (pedido explícito de workflow ou orquestração multiagente); sem
+opt-in, entregue desenho e script como texto e pergunte se roda. Para um
+grafo de 2 ou 3 nós, a mesma topologia roda com subagentes (`Agent`),
+sem script.
 
-## Passo 5 — custo e quando NÃO usar
+Pronto quando: cada nó da tabela aparece no script como uma chamada
+`agent()`, cada aresta como `pipeline`, `parallel`, condicional ou laço.
 
-Grafo de execução é a camada mais avançada e a menos madura do
-ferramental de agentes — cada nó extra é mais tokens e mais uma chance de
-falhar, não necessariamente um resultado melhor. Use quando a tarefa
-genuinamente se beneficia de perspectivas/paralelismo independentes
-(builder+critic, pesquisa+validação, múltiplas disciplinas). Para uma
-tarefa que um agente só resolve bem, um grafo só adiciona latência e
-custo — diga isso ao usuário em vez de desenhar um grafo por desenhar.
+## 6. Entregue
 
-## Saída
-
-Ao aplicar esta skill, entregue: a tabela de nós/arestas (Passo 3), a
-barra de qualidade (Passo 1), e — só se houver opt-in para Workflow —
-o script. Nunca entregue só o script sem o desenho, porque o desenho é o
-que o usuário revisa e corrige.
-
-## Referências
-
-- Vídeo de origem: youtube.com/watch?v=r8JueeaKJ9w (Maestros da IA)
-- Grilling antes do grafo: youtube.com/watch?v=bKI-YvBuu2Y, "Diretriz"
-  (Maestros da IA) — comparação de custo real contra grafo/loop
-- Grafo de planejamento: skills `grilling`/`grill-me`/`wayfinder` (Matt
-  Pocock, plugin "Skills For Real Engineers")
-- Técnica de validação: github.com/robonuggets/gauntlet-loop
-- Padrão de portões: skill `triagem-automacao-gp` (G1–G5)
-- Execução real: skill `workflow-authoring`
-- Como escrever esta skill: `writing-for-agents` (Matt Pocock)
+A frase do passo 1, a barra, a tabela de nós e arestas e o script. O
+desenho vai sempre junto: é ele que o usuário revisa e corrige.

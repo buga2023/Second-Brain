@@ -19,5 +19,10 @@ Formato: `AAAA-MM-DD — evento`.
   mattpocock/skills) — plugin "Skills For Real Engineers" instalado,
   grilling/wayfinder/writing-for-agents citados em CLAUDE.md e
   graph-engineering; nota matt-pocock.md criada.
+2026-11-10 — Ingest: análise do histórico de sessões; criadas as skills
+  raio-x, triar-feedback, desenhar-loop, fechar-sessao, agents-md e
+  graph-engineering v2; claude-config com regras e instalador; notas
+  fluxo-diario, como-trabalho, inventario-skills e
+  boas-praticas-instrucoes.
 
 Related: [00-Index](00-Index.md)

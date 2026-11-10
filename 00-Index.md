@@ -27,7 +27,15 @@ partir daqui.
 
 ## Skills
 
-- [skills](skills/README.md): backup de skills do Claude Code (ex.:
-  graph-engineering).
+- [skills](skills/README.md): skills do Claude Code (raio-x,
+  desenhar-loop, graph-engineering, triar-feedback, fechar-sessao,
+  agents-md, watch).
+
+## Configuração do Claude
+
+- [claude-config](claude-config/README.md): regras pessoais e instalador
+  para a máquina de trabalho.
+- [fluxo-diario](memory/context/fluxo-diario.md): qual skill usar em
+  cada momento.
 
 Related: [README](README.md)
