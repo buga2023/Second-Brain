@@ -42,10 +42,17 @@ aliases: [Apelido]     # opcional: outros nomes pelos quais a nota é conhecida
 
 ## Como usar (para o Claude)
 
-1. Antes de começar um trabalho que gere contexto reaproveitável, procure
-   aqui primeiro em vez de perguntar de novo.
-2. Ao final de um trabalho relevante, registre aqui (pessoa, projeto,
-   decisão ou termo novo) — não deixe só na conversa.
-3. Quando criar uma nota nova, link ela a partir do índice da pasta.
+Segue o padrão de "LLM wiki" do Karpathy (gist
+`karpathy/442a6bf555914893e9891c11519de94f`): três camadas — fontes brutas
+(imutáveis, nunca editadas), este wiki (que eu mantenho) e o esquema
+(este README + o CLAUDE.md global). Três operações:
+
+1. **Ingest** — ao chegar informação nova (pessoa, projeto, decisão,
+   termo), não deixe só na conversa: atualize a(s) nota(s) relevante(s),
+   linke do índice da pasta, e acrescente uma linha em [log.md](log.md).
+2. **Query** — antes de perguntar de novo, leia [00-Index.md](00-Index.md)
+   primeiro; ele aponta para a nota certa sem precisar vasculhar tudo.
+3. **Lint** — de tempos em tempos, rode o lint do vault (contradições,
+   notas órfãs, links quebrados) em vez de deixar degradar.
 
 Related: [00-Index](00-Index.md)
