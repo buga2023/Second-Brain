@@ -60,7 +60,7 @@ hoje.
 
 ## 5. Publique o vault
 
-Rode o lint do vault (skill `obsidian-notes`, se instalada), faça commit
+Rode o lint do vault (`python3 tools/vault_lint.py . --exclude skills tools`), faça commit
 e push. Na primeira vez da sessão, confirme o push com o usuário.
 
 Pronto quando: lint sem erros e o hash do commit foi informado.
