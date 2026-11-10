@@ -11,6 +11,7 @@ Consultoria e Engenharia), ferramentas usadas, processos e convenções
 internas, decisões de padrão (ex.: por que Obsidian, por que
 gauntlet-loop para validar planos).
 
-(Vazio por enquanto — ainda sem notas de contexto registradas.)
+- [entrevista-antes-do-grafo](entrevista-antes-do-grafo.md): por que
+  entrevistar escopo antes de desenhar grafo/loop.
 
 Related: [00-Index](../../00-Index.md)

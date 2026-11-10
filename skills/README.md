@@ -13,5 +13,8 @@ sobreviver a containers efêmeros. Cada pasta é uma skill completa
 
 - [graph-engineering](graph-engineering/SKILL.md): desenha grafos de
   execução de agentes (nós/arestas) e traduz para o Workflow tool.
+- [watch](watch/SKILL.md): assiste vídeo (URL/arquivo local) via
+  yt-dlp+ffmpeg ou Gemini — transcript + frames pro agente. De
+  `github.com/bradautomates/claude-video`, MIT.
 
 Related: [00-Index](../00-Index.md)
