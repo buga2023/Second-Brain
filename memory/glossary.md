@@ -29,5 +29,10 @@ precisar perguntar de novo.
 | Wayfinder | Mapa de tickets de decisão para trabalho maior que uma sessão (Matt Pocock) |
 | Gauntlet loop | Loop de validação de planos citado nos vídeos Maestros da IA; usar só depois do grilling |
 | Graph engineering | Desenho de grafos de execução de agentes ([skill](../skills/graph-engineering/SKILL.md)) |
+| Bug bounty | Programa que paga por falha de segurança achada dentro de um escopo ([guia-bug-bounty](../wiki/guias/guia-bug-bounty.md)) |
+| VDP | Vulnerability Disclosure Program: aceita reports, em geral sem pagar |
+| IDOR | Insecure Direct Object Reference: trocar um ID e acessar objeto de outro usuário |
+| CVE | Identificador público de vulnerabilidade conhecida (CVE-AAAA-NNNN) |
+| OSINT | Inteligência de fontes abertas (dados públicos) |
 
 Related: [00-Index](../00-Index.md)

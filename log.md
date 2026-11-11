@@ -81,3 +81,9 @@ Regra nova em claude-config/regras.md: todo projeto lê e mantém sua nota no va
 Vault registrado no Obsidian (Flatpak).
 
 Related: [00-Index](00-Index.md)
+
+## [2026-11-10] ingest | Reel nogCYBER e guia de bug bounty
+Reel do Instagram (nogCYBER, 13 ferramentas de pentest por fase) transcrito com a skill watch
+(motor local + WhisperX; instalador corrigido para fixar torchvision CPU). Pesquisa web sobre
+trilha de bug bounty, plataformas (HackerOne, Bugcrowd, Intigriti, BugHunt), recon e report.
+Novo guia wiki/guias/guia-bug-bounty.md; 5 termos no glossário.

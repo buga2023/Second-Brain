@@ -9,6 +9,7 @@ tags: [meta]
 Ponto de entrada: [overview](overview.md) · Histórico: [log](../log.md) · Fontes brutas: [raw](../raw/README.md)
 
 ## Guias (como fazer)
+- [guia-bug-bounty](guias/guia-bug-bounty.md): trilha de estudo, ferramentas por fase, report, plano de 8 semanas.
 - [guia-orca-orquestracao](guias/guia-orca-orquestracao.md): workers no Orca; armadilhas e o plano B que funcionou.
 - [guia-langchain](guias/guia-langchain.md): create_agent, ferramentas, memória, saída estruturada, middleware, HITL.
 - [guia-langgraph](guias/guia-langgraph.md): StateGraph, arestas, Command, checkpointer, interrupt, erros.
