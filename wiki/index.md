@@ -19,6 +19,7 @@ Ponto de entrada: [overview](overview.md) · Histórico: [log](../log.md) · Fon
 - [respostas-perguntas-abertas](sinteses/respostas-perguntas-abertas.md): limites, offline×online, quem assina, rollback, frequência.
 - [self-harness-como-etl](sinteses/self-harness-como-etl.md) — tese: o loop de Self-Harness é um ETL das falhas do agente; rascunho de esteira.
 - [decidir-langchain-ou-langgraph](sinteses/decidir-langchain-ou-langgraph.md) — tabela de decisão de camada.
+- [bug-bounty-do-zero](sinteses/bug-bounty-do-zero.md) — ferramentas, método, relatório e trilha de estudo de bug bounty.
 
 ## Projetos
 - [esteira-nti](projetos/esteira-nti.md): documentada; skill + repo no GitHub (buga2023/esteira-nti).

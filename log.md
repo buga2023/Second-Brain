@@ -80,4 +80,11 @@ Laya (venv), VoiceStudio (AppImage, checksum conferido), REA (MCP + skill, rea-a
 Regra nova em claude-config/regras.md: todo projeto lê e mantém sua nota no vault.
 Vault registrado no Obsidian (Flatpak).
 
+
+## [2026-11-11] query | Bug bounty do zero
+
+Pedido a partir de reel do Instagram (não visto: domínio bloqueado na sessão em nuvem).
+Pesquisa web virou [bug-bounty-do-zero](wiki/sinteses/bug-bounty-do-zero.md). Pendente: ferramentas do reel.
+
+
 Related: [00-Index](00-Index.md)
