@@ -87,3 +87,11 @@ Reel do Instagram (nogCYBER, 13 ferramentas de pentest por fase) transcrito com 
 (motor local + WhisperX; instalador corrigido para fixar torchvision CPU). Pesquisa web sobre
 trilha de bug bounty, plataformas (HackerOne, Bugcrowd, Intigriti, BugHunt), recon e report.
 Novo guia wiki/guias/guia-bug-bounty.md; 5 termos no glossário.
+
+## [2026-11-10] ingest+build | Skill bug-bounty criada e testada no lab
+Pesquisa aprofundada (subagente) sobre ferramentas e regras de bug bounty -> raw +
+wiki/fontes/fonte-pesquisa-bug-bounty-ferramentas.md. Skill skills/bug-bounty criada: SKILL.md
+com portao de escopo (escopo.py, testado), 4 referencias de fase + lab Juice Shop. Ferramentas
+instaladas (subfinder, httpx, nuclei, ffuf em ~/.local/bin; Juice Shop em podman). IDOR da cesta
+provado no lab (alice leu a cesta do bob via GET /rest/basket/7); report de exemplo gravado.
+Skill instalada em ~/.claude. Projeto: memory/projects/bug-bounty.md.

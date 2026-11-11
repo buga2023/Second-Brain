@@ -26,5 +26,6 @@ imagens vão em `assets/`. O resumo de cada fonte fica em
 | [Sessão Orca: orquestração](2026-11-06-sessao-orca-orquestracao.md) | experiência | [guia-orca-orquestracao](../wiki/guias/guia-orca-orquestracao.md) |
 | [Repositórios do vídeo: ferramentas para agentes](2026-11-10-repos-video-ferramentas-agentes.md) | lista | [fonte-repos-video-ferramentas-agentes](../wiki/fontes/fonte-repos-video-ferramentas-agentes.md) |
 | [Reel nogCYBER: ferramentas de hacking](2026-11-10-reel-nogcyber-ferramentas-hacking.md) | video | [fonte-reel-nogcyber-ferramentas-hacking](../wiki/fontes/fonte-reel-nogcyber-ferramentas-hacking.md) |
+| [Pesquisa web: ferramentas de bug bounty](2026-11-10-pesquisa-web-bug-bounty-ferramentas.md) | pesquisa-web | [fonte-pesquisa-bug-bounty-ferramentas](../wiki/fontes/fonte-pesquisa-bug-bounty-ferramentas.md) |
 
 Related: [00-Index](../00-Index.md) · [wiki](../wiki/index.md)
