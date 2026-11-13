@@ -17,5 +17,7 @@ Projetos com pesquisa própria ficam no wiki ([wiki/projetos](../../wiki/index.m
 - [prompt-engineering](prompt-engineering.md): refino de prompts com as práticas da Anthropic.
 - [Esteira NTI](../../wiki/projetos/esteira-nti.md): ciclo de evolução de
   agentes em produção (repo privado `buga2023/esteira-nti`).
+- [revisao-fluxograma-engenharia](revisao-fluxograma-engenharia.md): revisão de
+  fluxograma de engenharia no padrão GP (pedido #54, Processo).
 
 Related: [00-Index](../../00-Index.md)
