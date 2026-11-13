@@ -22,4 +22,7 @@ gauntlet-loop para validar planos).
 - [boas-praticas-instrucoes](boas-praticas-instrucoes.md): regras de
   `CLAUDE.md` e `AGENTS.md`; ler antes de escrever instrução para agente.
 
+- [licoes-auditoria-automacoes](licoes-auditoria-automacoes.md): classes de bug e
+  lições de processo da auditoria das automações de 13/11/2026.
+
 Related: [00-Index](../../00-Index.md)

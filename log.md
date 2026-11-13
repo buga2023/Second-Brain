@@ -95,3 +95,11 @@ com portao de escopo (escopo.py, testado), 4 referencias de fase + lab Juice Sho
 instaladas (subfinder, httpx, nuclei, ffuf em ~/.local/bin; Juice Shop em podman). IDOR da cesta
 provado no lab (alice leu a cesta do bob via GET /rest/basket/7); report de exemplo gravado.
 Skill instalada em ~/.claude. Projeto: memory/projects/bug-bounty.md.
+
+## [2026-11-13] memory | Auditoria das automações e harness de contexto de engenharia
+Auditoria de todas as automações da GP em produção (4 revisores por disciplina + reprodução
+do teste de um especialista; achados graves remedidos). Classes de bug e lições de processo em
+memory/context/licoes-auditoria-automacoes.md (detalhe por app fica no vault privado). Projeto
+novo memory/projects/contexto-engenharia.md: harness local (SQLite FTS5, sem nuvem) que monta o
+dossiê de contexto antes de criar uma automação; skill de triagem ganha passo 0 e checklist.
+

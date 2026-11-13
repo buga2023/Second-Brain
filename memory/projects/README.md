@@ -19,5 +19,8 @@ Projetos com pesquisa própria ficam no wiki ([wiki/projetos](../../wiki/index.m
   agentes em produção (repo privado `buga2023/esteira-nti`).
 - [revisao-fluxograma-engenharia](revisao-fluxograma-engenharia.md): revisão de
   fluxograma de engenharia no padrão GP (pedido #54, Processo).
+- [contexto-engenharia](contexto-engenharia.md): harness local que monta o dossiê
+  de contexto (o que já existe, normas, dados, pessoas, lições) antes de criar
+  uma automação.
 
 Related: [00-Index](../../00-Index.md)

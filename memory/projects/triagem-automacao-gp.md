@@ -41,7 +41,17 @@ começar? → como fazer funcionar? → como o Claude Code constrói isso?
   aciona o V.L.A.E.G. direto quando o projeto passa de uma automação de
   disciplina.
 
+## Melhorias planejadas (13/11/2026)
+
+- Passo 0: consultar o [harness de contexto](contexto-engenharia.md) antes da
+  triagem, para saber o que já existe, que dados há e que lições se aplicam.
+- Checklist de lições da [auditoria](../context/licoes-auditoria-automacoes.md)
+  no plano: nome de arquivo seguro, temporários, gabarito do mesmo projeto,
+  unidade medida nos dados, trabalho do colega conferido antes de corrigir.
+
 ## Related
+
+- [contexto-engenharia](contexto-engenharia.md)
 
 - [memory/projects](README.md)
 - [memory/glossary](../glossary.md)
