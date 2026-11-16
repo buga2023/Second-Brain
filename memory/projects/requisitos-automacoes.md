@@ -39,6 +39,15 @@ extração por lote (brief), `valida_extr.py dados/extr_*.json`,
   automação) em 6 automações, fórmulas testadas no LibreOffice. Envios do Portal
   vêm do access.log do nginx; "1 envio = 1 documento" é premissa, não fato.
 
+## Proposta do Bruno Damasceno para HH de Instrumentação (16/11, aguardando Manuela)
+- Troca o % fixo por função por % próprio e justificado por automação: SOL-023 50%/30%,
+  SOL-020 60%/20%, SOL-026 60%/30%, Item 15 (RM) 95%/60%; inclui SOL-021 (3,30 HH),
+  SOL-025 (3,60) e Item 17 PATEC (5,40). Total 9,9 → 27,5 HH (contas conferidas).
+- Pede renomear SOL-020 para "Lista de Instrumentos por fluxograma" e tirar SOL-021 de
+  Hold/Canceladas (v25: Implantada).
+- Continua **estimativa do especialista**, não medição. SOL-025 e Item 17 são potencial.
+- Status: a Manuela ainda vai aceitar ou reprovar. Não aplicar antes disso.
+
 ## Achados
 - O vault quase não cita o ID SOL: só 12 de 94 IDs aparecem em alguma nota.
 - Anexo B: nenhuma automação tem Ficha aprovada nem testes com os Casos A, B e C.
