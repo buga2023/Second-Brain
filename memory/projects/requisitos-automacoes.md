@@ -68,6 +68,17 @@ extração por lote (brief), `valida_extr.py dados/extr_*.json`,
   M2 Motor FD + M3 Pacote por TAG → M6 Isométricos → M4 Listas → M7/M8/M9.
 - O mesmo padrão "tipo como dado" existe em 4 formatos sem esquema comum; sigla RM com 2 significados.
 
+## Loop noturno 16-17/11: FD de Processo de Instrumentos
+- Nova automação `Projetos/FD de Processo de Instrumentos (Processo)` (branch `feature/fd-processo-instrumentos`,
+  commits locais, sem push; portal `/app/fd-processo-n2802/`, porta 8950): FD de Balanço (.docx) + lista de TAGs
+  → formulário N-2802 de pressão e vazão pré-preenchido. Caso A (5410, FDs emitidas 941-002/004): estrutura 100%,
+  lista 30/30, balanço 23/26 (massa específica 1/4 — regra pendente com a Processo). 74 testes, injeção 11/11,
+  revisão independente com 5 bloqueantes corrigidos.
+- Erro do loop: construí uma FD de Balanço Material que já existia (app Balanço de Massa, porta 8930,
+  `deploy/balanco-escolha-16-11`). Guardada em `feature/fd-balanco-material`, não abrir PR.
+- Docs e relatórios: branch `docs/requisitos-e-relatorios-17-11` (scripts dos requisitos/kits/HH/brainstorm,
+  correções propostas ao v25, relatório "Avanço 17/11" para a Manuela).
+
 ## Achados
 - O vault quase não cita o ID SOL: só 12 de 94 IDs aparecem em alguma nota.
 - Anexo B: nenhuma automação tem Ficha aprovada nem testes com os Casos A, B e C.
