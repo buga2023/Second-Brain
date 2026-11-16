@@ -27,6 +27,18 @@ extração por lote (brief), `valida_extr.py dados/extr_*.json`,
 - "Atendido" só com arquivo:linha de código. O que só está na nota fica como
   "Declarado, não conferido no código".
 
+## Kits por pessoa e medição de HH (16/11)
+- `kits_v2/`: 31 planilhas (30 pessoas + `NTI - interno.xlsx`), 405 perguntas para
+  316 itens em aberto, mais a aba "Dados do pedido" com os campos do formulário
+  Pedido de Automação GP v3 (colaboradores, aprovador, centro de custo, vezes em
+  30 dias, abrangência, % esperado...), uma linha por automação no kit do solicitante.
+  Check: `scripts/verifica_kits.py kits_v2`.
+- Decisão (Gustavo): os requisitos seguem os campos do Pedido v3; o PGI-DEV-006 do
+  .docx é o mesmo texto da skill.
+- `Roteiro_Cronometragem_HH.xlsx`: primeira medição real de HH (manual × com
+  automação) em 6 automações, fórmulas testadas no LibreOffice. Envios do Portal
+  vêm do access.log do nginx; "1 envio = 1 documento" é premissa, não fato.
+
 ## Achados
 - O vault quase não cita o ID SOL: só 12 de 94 IDs aparecem em alguma nota.
 - Anexo B: nenhuma automação tem Ficha aprovada nem testes com os Casos A, B e C.
