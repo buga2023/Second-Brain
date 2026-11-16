@@ -48,6 +48,26 @@ extração por lote (brief), `valida_extr.py dados/extr_*.json`,
 - Continua **estimativa do especialista**, não medição. SOL-025 e Item 17 são potencial.
 - Status: a Manuela ainda vai aceitar ou reprovar. Não aplicar antes disso.
 
+## Feedback do Caio Lima Fernandes sobre HH de Elétrica (16/11)
+- MC de Aterramento e de Iluminação **não são automatizáveis como cálculo**: saem de
+  software exigido pela Petrobras. Proposta dele: padrão para **anexar os relatórios do
+  software à MC** (poupa trabalho braçal). Muda o escopo de IDEIA-12/13 e do Item 12/13.
+- Demais critérios de Elétrica: coerentes.
+- Número geral: projeto tem vários documentos de cada tipo (ADF, PATEC e FD pesam mais);
+  usar a média de documentos por projeto do histórico. Medido no inventário do e-clic de
+  03/09: a média é distorcida (IS média 124 × mediana 11); usar mediana e p90 por tipo ×
+  disciplina. PATEC/ADF quase sem tipo no e-clic: histórico fraco para esses dois.
+
+## Brainstorm de emissão em massa (16/11)
+- `brainstorm/Brainstorm_Emissao_em_Massa.md` + `brainstorm/dados/volume_eclic.json` e `cobertura.json`
+  (scripts em `brainstorm/scripts/`). Volume = estoque do e-clic até 03/09 (inventário do GP Brain,
+  contado localmente; só agregados). 45,5% dos documentos sem tipo pelo código.
+- Achado: só 15% do volume tipado (células ≥50 docs) tem automação que gera em uso. Buracos: IS (16 mil),
+  DE de todas as disciplinas, FD de Processo (1.302, fonte das demais FDs), MC Civil/Tubulação.
+- 9 motores propostos; ordem sugerida: M1 Catálogo único de tipos → M5 Emissão padronizada (DE+IS) →
+  M2 Motor FD + M3 Pacote por TAG → M6 Isométricos → M4 Listas → M7/M8/M9.
+- O mesmo padrão "tipo como dado" existe em 4 formatos sem esquema comum; sigla RM com 2 significados.
+
 ## Achados
 - O vault quase não cita o ID SOL: só 12 de 94 IDs aparecem em alguma nota.
 - Anexo B: nenhuma automação tem Ficha aprovada nem testes com os Casos A, B e C.
