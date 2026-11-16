@@ -103,3 +103,18 @@ memory/context/licoes-auditoria-automacoes.md (detalhe por app fica no vault pri
 novo memory/projects/contexto-engenharia.md: harness local (SQLite FTS5, sem nuvem) que monta o
 dossiê de contexto antes de criar uma automação; skill de triagem ganha passo 0 e checklist.
 
+## [2026-11-16] sessao | PRs do dia nas automacoes da GP
+Fechamento do dia: tudo commitado, cada mudança no repositório dela, PRs abertos para revisão
+(CI verde; títulos de commit acima de 100 caracteres foram encurtados para passar no commitlint).
+- gpautomacoes, abertos: #17 esteira NTI no servidor; #61 ajustes do Cauan na FD de bomba centrífuga;
+  #62 RM de Elétrica com N-2760 no lugar da N-0332; #65 número da RM pela N-1710; #66 lista de materiais
+  (detalhe típico e isométricos); #67 falhas da suíte geral; #68 RM de Instrumentação; #69 novos tipos de FD
+  de instrumento; #71 FD de painel CC e CA ([nota](memory/projects/eletrica-fd-e-rm.md)).
+- gpautomacoes, mergeados hoje: #59, #60, #63, #64, #70.
+- sgm-api #22 e #23, sgm-front #25 ([nota](memory/projects/sgm.md)); PORTAL-FRONT #146 (apps no ar entram no catálogo).
+- Pendente de decisão: Balanço de Massa tem duas branches com a mesma "escolha das propriedades"
+  feita de dois jeitos; nenhuma tem PR.
+- Lição: o formulário de FD de painel guarda os valores em caixas de texto do desenho e cada arquivo da
+  família tem layout próprio; localizar campo pelo rótulo da linha, recusar rótulo repetido, e conferir
+  posição fora do próprio localizador (Excel).
+- Higiene: hook global de commit com Conventional Commits e sem co-autor do Claude; git com o nome do Gustavo.

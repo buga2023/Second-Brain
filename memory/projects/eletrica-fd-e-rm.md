@@ -24,7 +24,7 @@ FD no portal: `http://10.71.0.32:8080/app/fd-equipamento-eletrico/`.
 - 04/11/2026 (Caio): RM continua em Excel, no formulário N-381.
 - 09/11/2026 (Caio): N-2760 substitui a N-0332 em todo equipamento, inclusive
   quando a FD cita a N-0332.
-- 12/11/2026 (Caio): gabarito = FDs emitidas no e-clic do projeto ASP-072 (PTB16),
+- 12/11/2026 (Caio): gabarito = FDs emitidas no e-clic de um projeto de referência que ele indicou,
   que tem exemplo de todos os tipos; começar por painel e motor.
 - 16/11/2026 (Caio):
   - O "não ficou intuitivo" era sobre a FD; ele quer a FD geral, como a que está
@@ -39,8 +39,8 @@ FD no portal: `http://10.71.0.32:8080/app/fd-equipamento-eletrico/`.
 ## Estado (16/11/2026)
 - FD de painel CC e CA (iluminação/aquecimento) feita: PR #71 (gpautomacoes). O formulário de painel guarda os
   valores em caixas de texto do desenho; o app escreve nelas e acha cada campo pelo rótulo da linha (os arquivos
-  da família mudam de layout). Aceite: 0 campos diferentes em 4 FDs do ASP-072 e 1 de outro projeto (ASP-054).
-  Formulário de painel do ASP-005 é outro e é recusado.
+  da família mudam de layout). Aceite: 0 campos diferentes em 4 FDs do projeto de referência e 1 de outro projeto.
+  Um formulário de painel de um terceiro projeto tem outro layout e é recusado com mensagem.
 - Circuitos são digitados a partir do unifilar; ler o unifilar é outro pedido.
 - RM: N-2760 no lugar da N-0332 em todo tipo, PR #62.
 
