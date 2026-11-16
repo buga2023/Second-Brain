@@ -26,5 +26,7 @@ Projetos com pesquisa própria ficam no wiki ([wiki/projetos](../../wiki/index.m
 Related: [00-Index](../../00-Index.md)
 - [sgm](sgm.md): SGM, sistema de listas de materiais de tubulação (Tubulação e
   Mecânica); raio-x e correções de 16/11.
+- [requisitos-automacoes](requisitos-automacoes.md): Ficha PGI-DEV-006, requisitos,
+  pendências e melhorias das 94 automações do portfólio v25 (16/11).
 - [eletrica-fd-e-rm](eletrica-fd-e-rm.md): FD de Equipamento Elétrico e RM de
   Elétrica (Caio Lima Fernandes); decisões do especialista.
