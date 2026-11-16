@@ -36,6 +36,14 @@ FD no portal: `http://10.71.0.32:8080/app/fd-equipamento-eletrico/`.
   - CCM/CDC em .doc: basta salvar na versão atual do Word (.docx) para converter.
   - Não há FD em elaboração no momento.
 
+## Estado (16/11/2026)
+- FD de painel CC e CA (iluminação/aquecimento) feita: PR #71 (gpautomacoes). O formulário de painel guarda os
+  valores em caixas de texto do desenho; o app escreve nelas e acha cada campo pelo rótulo da linha (os arquivos
+  da família mudam de layout). Aceite: 0 campos diferentes em 4 FDs do ASP-072 e 1 de outro projeto (ASP-054).
+  Formulário de painel do ASP-005 é outro e é recusado.
+- Circuitos são digitados a partir do unifilar; ler o unifilar é outro pedido.
+- RM: N-2760 no lugar da N-0332 em todo tipo, PR #62.
+
 ## Como falar com o Caio
 Mandar a FD gerada e perguntas sim/não no vocabulário dele; pedido abstrato
 ("tabela campo → fonte") ele não entendeu.
