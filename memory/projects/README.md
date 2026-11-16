@@ -24,3 +24,5 @@ Projetos com pesquisa própria ficam no wiki ([wiki/projetos](../../wiki/index.m
   uma automação.
 
 Related: [00-Index](../../00-Index.md)
+- [sgm](sgm.md): SGM, sistema de listas de materiais de tubulação (Tubulação e
+  Mecânica); raio-x e correções de 16/11.
