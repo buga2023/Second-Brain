@@ -30,3 +30,5 @@ Related: [00-Index](../../00-Index.md)
   pendências e melhorias das 94 automações do portfólio v25 (16/11).
 - [eletrica-fd-e-rm](eletrica-fd-e-rm.md): FD de Equipamento Elétrico e RM de
   Elétrica (Caio Lima Fernandes); decisões do especialista.
+- [feminicidio-interseccional](feminicidio-interseccional.md): trabalho de faculdade
+  ETL + análise + dashboard de feminicídio (Aiven, Streamlit); Fase 4 em 2026-11.
