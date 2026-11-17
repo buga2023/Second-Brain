@@ -79,6 +79,16 @@ extração por lote (brief), `valida_extr.py dados/extr_*.json`,
 - Docs e relatórios: branch `docs/requisitos-e-relatorios-17-11` (scripts dos requisitos/kits/HH/brainstorm,
   correções propostas ao v25, relatório "Avanço 17/11" para a Manuela).
 
+## 17/11: anexado ao app Balanço de Massa e pedido da Bia
+- Branch `feature/balanco-aceite-e-fd-processo` (sobre `feat/balanco-massa-processo`, a mais nova; o app agora
+  usa a porta 8940): teste de aceite com a FD emitida 940 rev. C (corrente 1 19/19; tabelas 4-5 rótulos 100%;
+  48/171 no total — planilha é outra simulação), contrato sintético com a FD de Processo de Instrumentos e link
+  "próximo passo" na tela. Ponte conferida com dado real: o leitor da FD de Processo lê a FD gerada pelo app.
+- Divergência a confirmar com a Ana: app põe 1 tabela por folha; FD emitida tem a 1ª sozinha e depois 2 por folha.
+- Pedido da Bia (Lista de Equipamentos): campo "Título do documento" → CAPA!L5 (o carimbo da folha lê por
+  fórmula); vazio mantém o do modelo. Branch `fix/lista-equipamentos-titulo-documento` (sobre
+  `fix/lista-equipamentos-varias-fds`, ainda fora do development). Conferido com FD real + LibreOffice.
+
 ## Achados
 - O vault quase não cita o ID SOL: só 12 de 94 IDs aparecem em alguma nota.
 - Anexo B: nenhuma automação tem Ficha aprovada nem testes com os Casos A, B e C.
