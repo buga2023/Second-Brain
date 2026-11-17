@@ -48,6 +48,17 @@ Tubulação, no formulário GP. Usado por Tubulação e Mecânica.
   hash da senha da rota `/api/auth/:token`. Decisão do Gustavo: devolver o
   campo ao schema com migration segura, em vez de parar de enviá-lo.
 
+- **17/11/2026, reaproveitamento (Gustavo, caminho A):** o portal já tem em Python, com
+  testes, a Lista de Suportes (8680), a LM por Isométricos (8670), a leitura de DWG e de E3D
+  e o carimbo/revisão — duplicam o SGM. Só o SGM tem a `Nm_Sap`, o material de suporte pela
+  Matriz N-1758 e o banco com histórico. Decisão: levar essas duas peças para o módulo comum
+  `Projetos/_materiais_petrobras` do GPautomacoes (branch `feat/materiais-petrobras-modulo`,
+  worktree `automaçoes/wt-materiais-petrobras`); o SGM fica como está. Qual versão das
+  listas duplicadas fica é pergunta para a Manuela.
+- **17/11/2026, portão do diâmetro:** o TXT do portal não traz `P1BORE`; o app tira o
+  diâmetro do nome da linha (`dimensoes.py`). Em redução/derivação pode diferir do ponto do
+  suporte — confirmar com 1 área real antes do material de suporte no portal.
+
 ## Próximo passo
 
 Revisão do PR #22, rodar o SQL no banco e pegar 1 área real (matriz + export
