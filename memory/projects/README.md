@@ -32,3 +32,5 @@ Related: [00-Index](../../00-Index.md)
   Elétrica (Caio Lima Fernandes); decisões do especialista.
 - [feminicidio-interseccional](feminicidio-interseccional.md): trabalho de faculdade
   ETL + análise + dashboard de feminicídio (Aiven, Streamlit); Fase 4 em 2026-11.
+- [escala-5x2-24h](escala-5x2-24h.md): estudo de escala 5x2 com revezamento 24h
+  para fábrica têxtil (consultoria externa, 17/11).
