@@ -122,3 +122,11 @@ Fechamento do dia: tudo commitado, cada mudança no repositório dela, PRs abert
   família tem layout próprio; localizar campo pelo rótulo da linha, recusar rótulo repetido, e conferir
   posição fora do próprio localizador (Excel).
 - Higiene: hook global de commit com Conventional Commits e sem co-autor do Claude; git com o nome do Gustavo.
+
+## [2026-11-17] decisao | Respostas do Cauan sobre a FD de bomba centrífuga
+- Posição do bocal HORIZ./VERT. e ÁREA da capa como vier na FD de Processo: já implementados no #61.
+- Número "1.500" (1 a 3 dígitos, ponto, 3 dígitos) é ambíguo entre milhar e decimal: o campo fica em branco
+  com pendência; o Cauan pediu um exemplo para decidir. No PDF em inglês o ponto é sempre decimal.
+- Revisão: densidade relativa com diferença só de arredondamento passa (0,853 × 0,85).
+- Branch `fix/bombas-respostas-cauan-17-11` enviada; PR aguarda o registro no GPlan (sessão expirada).
+
