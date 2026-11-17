@@ -77,6 +77,17 @@ O Guia de Orientação (Docs anexo em "Orientações do projeto") pede:
 - Pitch: deck de 12 slides (artifact Slides, privado) + `docs/pitch/roteiro.md` com as perguntas da defesa.
 - Pacote de entrega: `~/Downloads/Entrega_Fase4_Gustavo_Santos_Mateus_Bulhoes/`.
 
+## Entrega pronta (2026-11-17)
+
+- Painel público: https://feminicidio-interseccional.streamlit.app (Streamlit Cloud, conta buga2023, Python 3.12;
+  Secret = URI do `painel_leitura`). Faz redeploy sozinho a cada push na `main`.
+- Slides: artifact Slides privado (BeRfLyGcVTFiRZSFX7izEf). O Gustavo precisa compartilhar com o Mateus.
+- Loop de revisão: check de 89 itens (números dos slides/README/roteiro = consulta ao vivo, barema,
+  segredos, terraform sem drift) + 2 revisores independentes. O revisor 2 deu 9,5 e "pronto para entregar".
+- Antes de apresentar: conferir se o `pg-feminicidio` está Running (o free desliga por inatividade) e abrir o painel
+  10 min antes (o Cloud hiberna).
+- O token do Aiven expira em cerca de 30 dias (criado em 17/11).
+
 ## Como rodar
 
 Ver o README do repositório (`run_pipeline.py`, `dashboard/`).
