@@ -46,6 +46,20 @@ O Guia de Orientação (Docs anexo em "Orientações do projeto") pede:
 - Pitch de 10 min com demonstração do Terraform.
 - Barema (10): Aiven+IaC 2,5 | ETL+modelagem 2,5 | regras, 5V, LGPD 1,5 | ODS 1,5 | dashboard 1,0 | README e pitch 1,0.
 
+## Conferência das fases anteriores (2026-11-17)
+
+- **Fase 1 (AI 02):** os arquivos entregues são `Fase1_GAP_Salarial_ENTREGA` (tema 01, RAIS/CAGED),
+  não feminicídio. Confirmar com o Gustavo se foi o arquivo errado.
+- **Fase 3 (AI 04):** o pedido era a "continuação da AI 03": Terraform, segurança de
+  credenciais, organização do repositório e README. A entrega foi a análise. O Terraform nunca foi entregue.
+- Os slides da professora ("Big Data – tudo o que você precisa saber") ensinam os **3 V's de Laney**
+  (Volume, Velocidade, Variedade). A ementa e o guia pedem 5 (+Veracidade e Valor). O README deve
+  apresentar os 3 e depois os 2 extras.
+- A ementa cita Hadoop/Spark. Justificar o Pandas em chunks pelo volume (~2,6 GB brutos).
+- O KDD do deck de Mineração (seleção → pré-processamento → transformação → mineração →
+  interpretação) serve para estruturar o pitch e o README.
+- Materiais baixados em `~/Downloads/classroom-bigdata/` (local, fora do vault).
+
 ## Como rodar
 
 Ver o README do repositório (`run_pipeline.py`, `dashboard/`).
