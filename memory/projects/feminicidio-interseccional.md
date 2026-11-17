@@ -60,6 +60,23 @@ O Guia de Orientação (Docs anexo em "Orientações do projeto") pede:
   interpretação) serve para estruturar o pitch e o README.
 - Materiais baixados em `~/Downloads/classroom-bigdata/` (local, fora do vault).
 
+## Fase 4 construída (2026-11-17)
+
+- O banco antigo `pg-1fc147bb` tinha sido criado no console durante o trial (plano developer-1, pago).
+  Quando o trial acabou, ficou POWEROFF. Não religamos, porque geraria cobrança.
+- Terraform (`terraform/`) criou `pg-feminicidio` no plano `free-1-1gb` (do-nyc) e o usuário `painel_leitura`
+  (só SELECT). O token do Aiven vale 30 dias e fica só no `.env`; o `scripts/tf.sh` passa ele como TF_VAR.
+- Recarga sem baixar as fontes de novo: `python -m scripts.carregar_processados` (cerca de 40 s).
+- Entrou a população feminina do IBGE (Projeção 2024, FTP) → tabela `populacao_feminina_uf` + `vw_taxas_uf_ano`.
+  Taxa Brasil 3,51 por 100 mil; RR 9,49 e SP 1,59 (SP tem o maior número absoluto e a menor taxa).
+- Dashboard Streamlit (`dashboard/app.py`): 4 KPIs, filtros, seletor de métrica, drill-down região→UF→município,
+  SQL parametrizado ao vivo. Deploy no Streamlit Cloud ficou pendente do login do Gustavo (authkit bloqueado para a extensão).
+- GitHub Actions: `ci.yml` (pytest + terraform validate) e `fontes.yml` (checagem mensal). Em 17/11 a checagem
+  achou o SINESP 2025 publicado e revisões do SINESP 2019-2024 e do SIM 2022/2023. O recorte continua 2019-2024.
+- O código da Fase 3 entrou no repositório (`analise/`, `saidas/`, `figuras/`, `docs/relatorio_fase3/`) e reproduz o findings.json idêntico.
+- Pitch: deck de 12 slides (artifact Slides, privado) + `docs/pitch/roteiro.md` com as perguntas da defesa.
+- Pacote de entrega: `~/Downloads/Entrega_Fase4_Gustavo_Santos_Mateus_Bulhoes/`.
+
 ## Como rodar
 
 Ver o README do repositório (`run_pipeline.py`, `dashboard/`).
