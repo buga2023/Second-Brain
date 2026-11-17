@@ -112,8 +112,12 @@ Fechamento do dia: tudo commitado, cada mudança no repositório dela, PRs abert
   de instrumento; #71 FD de painel CC e CA ([nota](memory/projects/eletrica-fd-e-rm.md)).
 - gpautomacoes, mergeados hoje: #59, #60, #63, #64, #70.
 - sgm-api #22 e #23, sgm-front #25 ([nota](memory/projects/sgm.md)); PORTAL-FRONT #146 (apps no ar entram no catálogo).
-- Pendente de decisão: Balanço de Massa tem duas branches com a mesma "escolha das propriedades"
-  feita de dois jeitos; nenhuma tem PR.
+- Balanço de Massa: Gustavo escolheu a branch que está no deploy. Ela virou `feat/balanco-massa-processo`,
+  limpa a partir da development (só o app, o registro no portal e o plano), porta 8940 porque a 8930 é do
+  fd-motor-bt. PR aguarda o registro no GPlan (sessão do GPlan expirou). A outra implementação
+  (% mol, versão no rodapé) ficou fora.
+- Lista de Equipamentos: commits de 13/11 que estavam só na branch do Balanço (ex.: upload com nome
+  repetido) não estão na development; avaliar se viram PR próprio.
 - Lição: o formulário de FD de painel guarda os valores em caixas de texto do desenho e cada arquivo da
   família tem layout próprio; localizar campo pelo rótulo da linha, recusar rótulo repetido, e conferir
   posição fora do próprio localizador (Excel).
