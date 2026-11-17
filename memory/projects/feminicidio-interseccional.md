@@ -28,6 +28,24 @@ de segurança pública e feminicídio com recorte de gênero, raça e idade
 - Escopo da sessão: entregáveis 1 a 4, incluindo o pitch.
 - Antes de construir: conferir o Classroom (enunciado, slides, feedbacks) via Claude in Chrome.
 
+## Barema e exigências (lido no Classroom em 2026-11-17)
+
+Disciplina Big Data e Analytics 2026/2. O projeto vale 6 pontos da 2ª unidade
+(prova vale 4) e a apresentação é obrigatória. A Fase 4 (AI 06) vale 100 pontos e
+vence em **2026-11-22**. As Fases 2 e 3 foram entregues e ainda estão sem nota.
+A AI 05 (Introdução a Big Data) ficou sem entrega e o prazo já fechou.
+
+O Guia de Orientação (Docs anexo em "Orientações do projeto") pede:
+- Repositório com `/etl`, `/terraform` (main.tf, variables.tf, outputs.tf, provider Aiven) e `/dashboard` (Streamlit).
+- README com diagrama, 5 V's, tipos de dados, dicionário de dados e regras de negócio,
+  justificativa relacional × não relacional e guia de deploy. A Fase 4 soma link, print,
+  os 4 KPIs e a análise ODS 5/18.
+- Dashboard online: ≥4 KPIs, filtros cruzados (Ano, UF/Região, Sexo, Raça/Cor, Faixa
+  Etária), seletor de métrica e drill-down.
+- Segredos fora do repositório (`.env` e Secrets); LGPD; GitHub Actions citado para Velocidade.
+- Pitch de 10 min com demonstração do Terraform.
+- Barema (10): Aiven+IaC 2,5 | ETL+modelagem 2,5 | regras, 5V, LGPD 1,5 | ODS 1,5 | dashboard 1,0 | README e pitch 1,0.
+
 ## Como rodar
 
 Ver o README do repositório (`run_pipeline.py`, `dashboard/`).
