@@ -74,7 +74,7 @@ aprovado no `tools/qa.py`, com comando e saída mostrados.
 16. Voz: VoiceStudio (OmniVoice, AGPL, voz por tags) testado no runner; a spec v2
     recomenda voz própria clonada (Chatterbox, MIT) de gravação autorizada por
     escrito. Pendente: de quem é a voz.
-17. Conflito aberto: spec v2 pede 4–5 vídeos/semana e aprovação humana nos 20
-    primeiros; Gustavo pediu 3/dia e postagem automática. Hoje: 3/dia + auto.
+17. Decidido (Gustavo, 2026-11-18): 3 vídeos/dia e postagem automática, mesmo com a spec v2 recomendando 4–5/semana e aprovação nos 20
+    primeiros. Voz: VoiceStudio (sem voz clonada por ora).
 
 Related: [README](README.md)
