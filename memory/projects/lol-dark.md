@@ -58,4 +58,23 @@ aprovado no `tools/qa.py`, com comando e saída mostrados.
 12. TikTok: perfil a configurar no Chrome (a extensão não tinha permissão em
     tiktok.com). Postagem automática exige app aprovado na TikTok.
 
+**Decisões (2026-11-18, cont.).**
+13. Texto pelo **Claude** (Claude Code headless `claude -p`, token da assinatura em
+    `CLAUDE_CODE_OAUTH_TOKEN`): roteirista, crítico (≥ 80) e juiz de vídeo por
+    folha de quadros. Gemini virou reserva. n8n descartado: o cron do Actions já
+    dispara nos horários.
+14. Spec v2 (doc do Gustavo): `qa.py` dele virou a trava técnica (−14 LUFS,
+    movimento a cada 2 s, loop visual/áudio); `masterizar.sh` no fim do render;
+    paleta #0B3D6A/#051C33/#D1A147/#EDEAE4, Anton + JetBrains Mono + Archivo,
+    ▲ buff ouro / ▼ nerf papel; `lint_editorial.py` (cópia ≥ 8 palavras, gancho
+    repetido).
+15. 62 pautas perenes (`assets/pautas_evergreen.json`): cada uma é pergunta; o
+    Claude pesquisa na web só em domínios oficiais e o código baixa a página e
+    confere o trecho citado. Sem fonte conferida: `sem_fonte`.
+16. Voz: VoiceStudio (OmniVoice, AGPL, voz por tags) testado no runner; a spec v2
+    recomenda voz própria clonada (Chatterbox, MIT) de gravação autorizada por
+    escrito. Pendente: de quem é a voz.
+17. Conflito aberto: spec v2 pede 4–5 vídeos/semana e aprovação humana nos 20
+    primeiros; Gustavo pediu 3/dia e postagem automática. Hoje: 3/dia + auto.
+
 Related: [README](README.md)
