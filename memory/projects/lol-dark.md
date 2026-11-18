@@ -79,4 +79,15 @@ aprovado no `tools/qa.py`, com comando e saída mostrados.
 17. Decidido (Gustavo, 2026-11-18): 3 vídeos/dia e postagem automática, mesmo com a spec v2 recomendando 4–5/semana e aprovação nos 20
     primeiros. Voz: VoiceStudio (sem voz clonada por ora).
 
+**Estado ao fechar a sessão (2026-11-18, ~02h15).**
+18. Voz do canal escolhida pelo Gustavo: VoiceStudio/OmniVoice, tom médio; roda em podman local (127.0.0.1:3900).
+19. Dados do competitivo pela API gratuita da Leaguepedia (`tools/esports.py`), com crédito CC BY-SA.
+20. Banco com 74 pautas em 14 séries; manual em `docs/PLAYBOOK.md`; modelos por série em `data/modelos/`.
+21. Formato "O Ward Viu" proposto, aguardando aprovação.
+22. Rodando sozinho: timer local `wardado-ciclo.timer` (1 vídeo a cada 4 h, sem publicar), laços dos exemplos A/B/C
+    e gerador de roteiros de referência. Nenhum dos 3 exemplos tinha passado nas travas ao fechar.
+23. Pendente com o Gustavo: token do Claude, bot do Telegram, OAuth e auditoria do YouTube, chave do Gemini válida.
+
+Lições e pesquisa: [wardado-aprendizados](../../wiki/projetos/wardado-aprendizados.md).
+
 Related: [README](README.md)

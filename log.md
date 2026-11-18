@@ -136,3 +136,6 @@ Página [wardado-clips](wiki/projetos/wardado-clips.md): arquitetura da esteira 
 
 ## [2026-11-18] ingest | Wardado: aprendizados e laço de melhoria
 Páginas [wardado-aprendizados](wiki/projetos/wardado-aprendizados.md) (lições de roteiro, fontes, edição, voz, infra e plataformas) e [wardado-melhorias](wiki/projetos/wardado-melhorias.md) (registro automático de cada vídeo). Voz do canal escolhida pelo dono: VoiceStudio tom médio. Séries novas: jogada de pro, agenda, build, lore.
+
+## [2026-11-18] sessao | Wardado: fechamento do dia
+Estado, decisões 18–23 e pendências em memory/projects/lol-dark.md; lições em wiki/projetos/wardado-aprendizados.md.
