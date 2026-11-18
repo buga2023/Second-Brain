@@ -133,3 +133,6 @@ Fechamento do dia: tudo commitado, cada mudança no repositório dela, PRs abert
 
 ## [2026-11-18] ingest | Wardado Clips documentado
 Página [wardado-clips](wiki/projetos/wardado-clips.md): arquitetura da esteira (coleta → pauta → pesquisa com fonte conferida → roteiro Claude com crítico ≥ 80 e nota editorial → voz → HyperFrames com gameplay oficial → masterização → qa.py → estoque → postagem 09/13/19h), quatro travas, identidade da skill edicao-wardado, skills e workflows. Ligada no índice e em memory/projects/lol-dark.md.
+
+## [2026-11-18] ingest | Wardado: aprendizados e laço de melhoria
+Páginas [wardado-aprendizados](wiki/projetos/wardado-aprendizados.md) (lições de roteiro, fontes, edição, voz, infra e plataformas) e [wardado-melhorias](wiki/projetos/wardado-melhorias.md) (registro automático de cada vídeo). Voz do canal escolhida pelo dono: VoiceStudio tom médio. Séries novas: jogada de pro, agenda, build, lore.

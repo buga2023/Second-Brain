@@ -143,6 +143,9 @@ Todos os que escrevem estado usam `concurrency: state`, e o push faz rebase com 
 
 ## Related
 
+- [wardado-aprendizados](wardado-aprendizados.md)
+- [wardado-melhorias](wardado-melhorias.md)
+
 - [lol-dark (memória)](../../memory/projects/lol-dark.md)
 - [guia-orca-orquestracao](../guias/guia-orca-orquestracao.md)
 - [esteira-nti](esteira-nti.md)
