@@ -87,6 +87,7 @@ O Guia de Orientação (Docs anexo em "Orientações do projeto") pede:
 - Antes de apresentar: conferir se o `pg-feminicidio` está Running (o free desliga por inatividade) e abrir o painel
   10 min antes (o Cloud hiberna).
 - O token do Aiven expira em cerca de 30 dias (criado em 17/11).
+- **AI 06 entregue no Classroom em 17/11/2026, às 21h20**: links do repositório e do painel + codigo_fase4.zip + slides em PDF + LEIA-ME.txt (os arquivos estão no Drive da conta da UCSal).
 
 ## Como rodar
 
