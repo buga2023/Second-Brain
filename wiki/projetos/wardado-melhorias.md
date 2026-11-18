@@ -17,6 +17,7 @@ certa quando se repetem. Arquitetura: [wardado-clips](wardado-clips.md).
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2026-11-18 01:16 | C (voce-sabia) | None | NÃO SAIU (0v) | — | —/—/—/— | —  | — |
 | 2026-11-18 01:19 | C (voce-sabia) | None | NÃO SAIU (0v) | — | —/—/—/— | —  | — |
+| 2026-11-18 01:22 | C (voce-sabia) | None | NÃO SAIU (0v) | — | —/—/—/— | —  | — |
 <!-- voltas -->
 
 ## Pontos de melhoria
@@ -31,6 +32,10 @@ certa quando se repetem. Arquitetura: [wardado-clips](wardado-clips.md).
 - **pauta** (2026-11-18 01:19, C): ev-022 descartada — sem fonte oficial ou primária com trecho conferido na página
 - **pauta** (2026-11-18 01:19, C): ev-023 descartada — sem fonte oficial ou primária com trecho conferido na página
 - **pauta** (2026-11-18 01:19, C): ev-024 descartada — sem fonte oficial ou primária com trecho conferido na página
+- **pauta** (2026-11-18 01:22, C): ev-025 descartada — sem fonte oficial ou primária com trecho conferido na página
+- **pauta** (2026-11-18 01:22, C): ev-026 descartada — sem fonte oficial ou primária com trecho conferido na página
+- **pauta** (2026-11-18 01:22, C): ev-027 descartada — sem fonte oficial ou primária com trecho conferido na página
+- **pauta** (2026-11-18 01:22, C): ev-028 descartada — sem fonte oficial ou primária com trecho conferido na página
 <!-- pontos -->
 
 ## Related
