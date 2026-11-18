@@ -17,6 +17,29 @@ fontes: []
 > - **Nota de memória e decisões:** [lol-dark](../../memory/projects/lol-dark.md).
 > - **Spec do dono:** `docs/SPEC.md` no repositório (versão 3).
 
+## Arquitetura revisada (spec v5, 18/11/2026)
+
+**Um modelo gera, outro fiscaliza.** O Antigravity CLI (`agy`, Gemini com o login do Ultra, sem chave de API) escreve o
+rascunho do roteiro; o Claude Code orquestra e fiscaliza (pesquisa de fontes, crítico ≥ 80, nota editorial,
+`verificar.py`, `qa.py`, juiz de vídeo, decisão de publicar). Coordenação local pelo [Orca](../guias/guia-orca-orquestracao.md).
+
+| Papel | Agente | Onde |
+| --- | --- | --- |
+| Roteirista | `agy -p --output-format json` (modelo `gemini-4-carbon-high`) | `tools/llm.py` → `agy()`; testado em 18/11 (resposta em ~4 s) |
+| Fiscal | Claude Code `claude -p` | crítico, nota editorial, pesquisa, juiz |
+| Coordenação | Orca | worktree por agente (a montar) |
+
+Consequência: o caminho principal passa a ser **a máquina do Gustavo ligada**, porque o `agy` usa o login em cache.
+No GitHub Actions o roteirista cai para o Claude (`LOL_LLM_ESCRITOR=claude`). Gemini CLI foi encerrado para Pro/Ultra
+em 18/06/2026 **(não verificado: fonte única citada na spec)**.
+
+## Perguntas abertas
+
+- Agentes remotos do Antigravity rodam com a máquina desligada? Seria o caminho para 24h.
+- O Veo é acessível pelo `agy` ou só pelo Flow?
+- Quantos vídeos por semana a cota do Ultra aguenta?
+- Disco local com ~2 GB livres: a esteira local precisa de espaço antes de virar caminho principal.
+
 ## Como funciona, em uma figura
 
 ```mermaid
@@ -29,7 +52,7 @@ flowchart LR
     I --> C[curar.py: escolhe a pauta]
     E[(data/pautas_evergreen.json: 62 perguntas)] --> C
     C --> P[pesquisar.py: Claude busca fonte oficial; código confere o trecho]
-    P --> R[roteirizar.py: Claude escreve]
+    P --> R[roteirizar.py: agy escreve]
     R --> K{critico.py + lint_editorial + verificar}
     K -- "< 80 ou falha" --> R
     K -- ">= 80" --> N[narrar.py: voz + tratamento]
@@ -56,7 +79,7 @@ Actions (30 dias), nunca no git.
 | `tools/coletar.py` | Baixa notas de patch, notícias e lore | Deduplica por hash da URL; fonte fora do ar não derruba a coleta |
 | `tools/curar.py` | Escolhe a pauta | Só o patch mais recente vira pauta; depois perenes em rodízio de série; não repete tema em 14 dias |
 | `tools/pesquisar.py` | Responde pautas perenes | Claude com WebSearch só em domínios da Riot e na wiki oficial; o código baixa a página e exige o trecho literal |
-| `tools/roteirizar.py` | Escreve o `roteiro.json` | Prompt = skill `roteiro-short-lol` + rubrica do crítico; até 4 rodadas com as críticas acumuladas |
+| `tools/roteirizar.py` | Escreve o `roteiro.json` | Roteirista = `agy` (local) ou Claude (nuvem); prompt = skill `roteiro-short-lol` + rubrica do crítico; até 4 rodadas |
 | `tools/critico.py` | Nota 0–100 e nota editorial 1–5 | Rubrica de 8 critérios (inclui antislop); crítico recebe a própria crítica anterior para não mudar de direção |
 | `tools/lint_editorial.py` | Barra slop por código | Frases proibidas, cópia de 8+ palavras da fonte, gancho repetido |
 | `tools/verificar.py` | Checagem de fatos | Todo número dito ou mostrado precisa existir no texto da fonte |
