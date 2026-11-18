@@ -23,6 +23,7 @@ Ponto de entrada: [overview](overview.md) · Histórico: [log](../log.md) · Fon
 
 ## Projetos
 - [esteira-nti](projetos/esteira-nti.md): documentada; skill + repo no GitHub (buga2023/esteira-nti).
+- [wardado-melhorias](projetos/wardado-melhorias.md): laço de melhoria do Wardado — voltas, notas e pontos de ajuste por área.
 - [wardado-clips](projetos/wardado-clips.md): como funciona a esteira de Shorts de LoL (Claude + HyperFrames + GitHub Actions), travas, identidade e skills.
 
 ## Conceitos
