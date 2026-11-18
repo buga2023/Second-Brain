@@ -28,6 +28,7 @@ certa quando se repetem. Arquitetura: [wardado-clips](wardado-clips.md).
 | 2026-11-18 02:16 | C (voce-sabia) | None | NÃO SAIU (0v) | — | —/—/—/— | —  | — |
 | 2026-11-18 02:16 | C (voce-sabia) | None | NÃO SAIU (0v) | — | —/—/—/— | —  | — |
 | 2026-11-18 02:16 | C (voce-sabia) | None | NÃO SAIU (0v) | — | —/—/—/— | —  | — |
+| 2026-11-18 07:30 | A (patch60) | None | NÃO SAIU (0v) | 82 | 3/3/4/3 | —  | — |
 <!-- voltas -->
 
 ## Pontos de melhoria
@@ -78,6 +79,7 @@ certa quando se repetem. Arquitetura: [wardado-clips](wardado-clips.md).
 - **pauta** (2026-11-18 02:16, C): ev-026 descartada — sem fonte oficial ou primária com trecho conferido na página
 - **pauta** (2026-11-18 02:16, C): ev-027 descartada — sem fonte oficial ou primária com trecho conferido na página
 - **pauta** (2026-11-18 02:16, C): ev-028 descartada — sem fonte oficial ou primária com trecho conferido na página
+- **pauta** (2026-11-18 07:30, A): 40dbee4e32c635e1 descartada — roteiro não passou no crítico (80) ou na nota editorial (4) em 2 voltas
 <!-- pontos -->
 
 ## Related
