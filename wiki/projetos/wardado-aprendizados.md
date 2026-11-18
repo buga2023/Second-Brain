@@ -79,6 +79,36 @@ Números de mercado vêm de guias de terceiros, **(não verificado)** quando nã
 - 3 a 5 hashtags; título com campeão ou patch; arquivo sem marca d'água de outro app ao republicar.
 - Divulgação por bot em comunidades alheias foi recusada: é spam e arrisca o canal.
 
+## Canais de referência (metadados públicos do YouTube lidos em 18/11/2026)
+
+Referência de **formato**, não de conteúdo. Ninguém assistiu aos vídeos: gancho e tom vêm de legendas automáticas de 5 vídeos.
+
+| Canal | Inscritos | O que mais rende | Padrão |
+| --- | --- | --- | --- |
+| Renecrodilo | 255 mil | Compilados diários de clipes (32–72 mil views); Shorts narrados de fato único fizeram 125–771 mil, mas o canal parou em 04/2024 | Título em caixa alta com dois assuntos; abre direto no clipe |
+| Rato Imoral | 187 mil | Série "Jogadas Imorais" (até 905 mil) rende muito mais que o compilado diário (3–35 mil) | "História com começo, meio e fim" |
+| Bronziocre | 1,11 mi | Série "Como os ___ realmente jogam" (3,1 a 5,6 mi) | Vocabulário próprio (Bronzétes, CBLOW), abre no pico do caos |
+
+Padrões a adaptar (inferência): série nomeada e numerada rende mais que vídeo avulso; número concreto no título;
+primeira frase já é o fato; vocabulário próprio do canal; Short narrado de fato único é o formato mais próximo do
+Wardado e está sem dono entre esses canais.
+
+**Cortes de streamers.** Não achamos política pública de Ilha das Lendas, Kami, Jukes, Kennzy ou Smurf do Muca
+permitindo cortes de terceiros; vários têm canal de cortes próprio. O Renecrodilo pede na descrição "não dê strike".
+Decisão: o Wardado não reposta clipe de streamer sem autorização; fala da jogada com narração e arte oficiais.
+
+## Dados gratuitos do competitivo
+
+API Cargo da Leaguepedia, sem chave (`tools/esports.py`): agenda, resultados e estatísticas de todas as ligas, com
+crédito CC BY-SA 3.0 na descrição. Primeiro dado lido: final do Mundial 2026, Bilibili Gaming 3 a 1 Gen.G (14/11).
+
+## Formato-assinatura proposto: O Ward Viu
+
+Todo vídeo é o que um ward revelou: abre na névoa de guerra, a sentinela cai e a névoa abre sobre o fato; fecha com
+um selo fixo (`WARDADO` confirmado, `SEM VISÃO` hipótese, `VARRIDO` removido ou revertido) e a pergunta "Você tinha
+visão disso?". Série recorrente "A Riot voltou atrás?": a cada patch, reabre uma mudança antiga e confere na nota
+nova. Manual completo: `docs/PLAYBOOK.md` no repositório. **A validar com o dono.**
+
 ## Decisões do dono que contrariam a recomendação
 
 - 3 vídeos por dia e postagem automática (as skills recomendam 4–5 por semana e aprovação nos 20 primeiros).
