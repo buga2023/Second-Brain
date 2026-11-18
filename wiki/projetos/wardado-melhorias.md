@@ -16,6 +16,7 @@ certa quando se repetem. Arquitetura: [wardado-clips](wardado-clips.md).
 | Quando | Vídeo | Pauta | QA | Crítico | Editorial (g/â/c/f) | Revisor | Voz |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2026-11-18 01:16 | C (voce-sabia) | None | NÃO SAIU (0v) | — | —/—/—/— | —  | — |
+| 2026-11-18 01:19 | C (voce-sabia) | None | NÃO SAIU (0v) | — | —/—/—/— | —  | — |
 <!-- voltas -->
 
 ## Pontos de melhoria
@@ -25,6 +26,11 @@ certa quando se repetem. Arquitetura: [wardado-clips](wardado-clips.md).
 - **pauta** (2026-11-18 01:16, C): ev-031 descartada — sem fonte oficial ou primária com trecho conferido na página
 - **pauta** (2026-11-18 01:16, C): ev-032 descartada — sem fonte oficial ou primária com trecho conferido na página
 - **pauta** (2026-11-18 01:16, C): ev-033 descartada — sem fonte oficial ou primária com trecho conferido na página
+- **pauta** (2026-11-18 01:19, C): ev-034 descartada — sem fonte oficial ou primária com trecho conferido na página
+- **pauta** (2026-11-18 01:19, C): ev-035 descartada — sem fonte oficial ou primária com trecho conferido na página
+- **pauta** (2026-11-18 01:19, C): ev-022 descartada — sem fonte oficial ou primária com trecho conferido na página
+- **pauta** (2026-11-18 01:19, C): ev-023 descartada — sem fonte oficial ou primária com trecho conferido na página
+- **pauta** (2026-11-18 01:19, C): ev-024 descartada — sem fonte oficial ou primária com trecho conferido na página
 <!-- pontos -->
 
 ## Related
