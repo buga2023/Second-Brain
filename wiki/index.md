@@ -23,6 +23,7 @@ Ponto de entrada: [overview](overview.md) · Histórico: [log](../log.md) · Fon
 
 ## Projetos
 - [esteira-nti](projetos/esteira-nti.md): documentada; skill + repo no GitHub (buga2023/esteira-nti).
+- [wardado-clips](projetos/wardado-clips.md): como funciona a esteira de Shorts de LoL (Claude + HyperFrames + GitHub Actions), travas, identidade e skills.
 
 ## Conceitos
 - [avaliacao-offline-e-online](conceitos/avaliacao-offline-e-online.md): dataset congelado antes, tráfego real depois; champion×challenger.

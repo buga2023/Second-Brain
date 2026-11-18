@@ -130,3 +130,6 @@ Fechamento do dia: tudo commitado, cada mudança no repositório dela, PRs abert
 - Revisão: densidade relativa com diferença só de arredondamento passa (0,853 × 0,85).
 - Branch `fix/bombas-respostas-cauan-17-11` enviada; PR aguarda o registro no GPlan (sessão expirada).
 
+
+## [2026-11-18] ingest | Wardado Clips documentado
+Página [wardado-clips](wiki/projetos/wardado-clips.md): arquitetura da esteira (coleta → pauta → pesquisa com fonte conferida → roteiro Claude com crítico ≥ 80 e nota editorial → voz → HyperFrames com gameplay oficial → masterização → qa.py → estoque → postagem 09/13/19h), quatro travas, identidade da skill edicao-wardado, skills e workflows. Ligada no índice e em memory/projects/lol-dark.md.

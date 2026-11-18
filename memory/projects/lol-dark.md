@@ -11,6 +11,8 @@ um Short por dia feito por uma esteira automática: coleta notas oficiais da
 Riot → roteiro com IA → crítico com nota mínima 80 → narração Kokoro →
 render HyperFrames → QA → publicação.
 
+**Como funciona (wiki):** [wardado-clips](../../wiki/projetos/wardado-clips.md).
+
 **Onde está.**
 - Código: `~/Projects/lol-dark` (GitHub `buga2023/lol-dark`, público, para ter
   Actions ilimitado).
