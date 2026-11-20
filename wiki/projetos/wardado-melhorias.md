@@ -35,6 +35,7 @@ certa quando se repetem. Arquitetura: [wardado-clips](wardado-clips.md).
 | 2026-11-19 22:35 | B (voce-sabia) | None | NÃO SAIU (0v) | 81 | 2/2/3/3 | —  | — |
 | 2026-11-19 22:35 | C (voce-sabia) | None | NÃO SAIU (0v) | — | —/—/—/— | —  | — |
 | 2026-11-20 08:33 | B (voce-sabia) | None | NÃO SAIU (0v) | — | —/—/—/— | —  | — |
+| 2026-11-20 12:15 | C (voce-sabia) | None | NÃO SAIU (0v) | — | —/—/—/— | —  | — |
 <!-- voltas -->
 
 ## Pontos de melhoria
