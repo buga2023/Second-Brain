@@ -34,6 +34,7 @@ certa quando se repetem. Arquitetura: [wardado-clips](wardado-clips.md).
 | 2026-11-18 21:13 | A (patch60) | None | NÃO SAIU (0v) | 81 | 3/3/2/3 | —  | — |
 | 2026-11-19 22:35 | B (voce-sabia) | None | NÃO SAIU (0v) | 81 | 2/2/3/3 | —  | — |
 | 2026-11-19 22:35 | C (voce-sabia) | None | NÃO SAIU (0v) | — | —/—/—/— | —  | — |
+| 2026-11-20 08:33 | B (voce-sabia) | None | NÃO SAIU (0v) | — | —/—/—/— | —  | — |
 <!-- voltas -->
 
 ## Pontos de melhoria
@@ -96,6 +97,11 @@ certa quando se repetem. Arquitetura: [wardado-clips](wardado-clips.md).
 - **pauta** (2026-11-19 22:35, B): ev-037 descartada — roteiro não passou no crítico (80) ou na nota editorial (4) em 2 voltas
 - **pauta** (2026-11-19 22:35, B): ev-038 descartada — roteiro não passou no crítico (80) ou na nota editorial (4) em 2 voltas
 - **pauta** (2026-11-19 22:35, B): ev-039 descartada — sem fonte oficial ou primária com trecho conferido na página
+- **pauta** (2026-11-20 08:33, B): ev-011 descartada — sem fonte oficial ou primária com trecho conferido na página
+- **pauta** (2026-11-20 08:33, B): ev-036 descartada — sem fonte oficial ou primária com trecho conferido na página
+- **pauta** (2026-11-20 08:33, B): ev-037 descartada — sem fonte oficial ou primária com trecho conferido na página
+- **pauta** (2026-11-20 08:33, B): ev-038 descartada — sem fonte oficial ou primária com trecho conferido na página
+- **pauta** (2026-11-20 08:33, B): ev-040 descartada — sem fonte oficial ou primária com trecho conferido na página
 <!-- pontos -->
 
 ## Related
