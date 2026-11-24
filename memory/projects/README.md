@@ -18,6 +18,7 @@ Projetos com pesquisa própria ficam no wiki ([wiki/projetos](../../wiki/index.m
 - [Esteira NTI](../../wiki/projetos/esteira-nti.md): ciclo de evolução de
   agentes em produção (repo privado `buga2023/esteira-nti`).
 - [mc-linhas-processo](mc-linhas-processo.md): MC de linhas em Word a partir de planilha; base do motor de MC.
+- [mc-processo-vasos-trocadores-psv](mc-processo-vasos-trocadores-psv.md): MCs de Vasos, Trocadores e PSV no modelo do contrato (SOL-050/051/054); v1.0 padrão do documento.
 - [revisao-fluxograma-engenharia](revisao-fluxograma-engenharia.md): revisão de
   fluxograma de engenharia no padrão GP (pedido #54, Processo).
 - [contexto-engenharia](contexto-engenharia.md): harness local que monta o dossiê
@@ -37,3 +38,5 @@ Related: [00-Index](../../00-Index.md)
   (GitHub Actions, crítico ≥ 80, HyperFrames); piloto do patch 26.23 em 17/11.
 - [escala-5x2-24h](escala-5x2-24h.md): estudo de escala 5x2 com revezamento 24h
   para fábrica têxtil (consultoria externa, 17/11).
+- [isometrico-e3d-padrao-emissao](isometrico-e3d-padrao-emissao.md): DXF do E3D vira DWG no
+  padrão de emissão (Fábio Cruz, Tubulação); v0.1.0 sem aceite, 23/11.

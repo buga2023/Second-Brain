@@ -139,3 +139,6 @@ Páginas [wardado-aprendizados](wiki/projetos/wardado-aprendizados.md) (lições
 
 ## [2026-11-18] sessao | Wardado: fechamento do dia
 Estado, decisões 18–23 e pendências em memory/projects/lol-dark.md; lições em wiki/projetos/wardado-aprendizados.md.
+
+## [2026-11-24] sessao | MC de Processo (Vasos/Trocador/PSV): acabamento, cobertura e QA
+Três automações niveladas no padrão v1.0: acabamento portado da MC de Linhas (XXX amarelo, imagens órfãs e metadados do arquivo-modelo zerados — fechou vazamento do autor Petrobras ENGENHARIA/IEABAST/EAB em todo .docx), painel de cobertura (preenchido × base, via dataclass Cobertura + gerar_com_cobertura + header X-MC-Cobertura) e aviso de formato de tabela no Trocador/PSV (casamento por ordem). 4 achados do reteste do Vasos corrigidos (decimal em notação científica, texto do botão, aviso de "não recalcula", título de seção vazando p/ Documentos). PRs #115/#101/#104/#116 mergeados no development; apps 8952-8954 no ar. Coordenação com a sessão zerar-pendencias-painel-qa (QA do painel 8960). GPlan 617/618/619 em Concluído. Pendente da Manuela: chave de identidade da trava anti-corpo-alheio no Trocador/PSV + metodologia-padrão. Nota: memory/projects/mc-processo-vasos-trocadores-psv.md.
