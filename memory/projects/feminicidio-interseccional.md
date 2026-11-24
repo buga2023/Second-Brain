@@ -89,6 +89,14 @@ O Guia de Orientação (Docs anexo em "Orientações do projeto") pede:
 - O token do Aiven expira em cerca de 30 dias (criado em 17/11).
 - **AI 06 entregue no Classroom em 17/11/2026, às 21h20**: links do repositório e do painel + codigo_fase4.zip + slides em PDF + LEIA-ME.txt (os arquivos estão no Drive da conta da UCSal).
 
+## Painel fora do ar (2026-11-23)
+
+- Sintoma: `psycopg.OperationalError` em `conninfo_attempts` no Streamlit Cloud (o host do banco não resolvia no DNS).
+- Causa: o Aiven desligou o `pg-feminicidio` (free) por inatividade em 23/11, às 13h30 UTC. Serviço em POWEROFF perde o DNS.
+- Correção: religar pela API (`PUT .../service/pg-feminicidio` com `{"powered": true}`) ou pelo console. Levou cerca de 4 min
+  e os dados voltaram do backup, sem recarga. O Secret do Streamlit não muda (mesmo host, porta e usuário).
+- O `pg-1fc147bb` (developer-1, pago) continua desligado de propósito.
+
 ## Como rodar
 
 Ver o README do repositório (`run_pipeline.py`, `dashboard/`).
