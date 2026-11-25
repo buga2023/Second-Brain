@@ -9,6 +9,12 @@ tags: [meta]
 Projetos, automações e skills em andamento, com codinome quando houver.
 Projetos com pesquisa própria ficam no wiki ([wiki/projetos](../../wiki/index.md)).
 
+- [rodada-qa-automacoes](rodada-qa-automacoes.md): como corrigir em bloco os achados da QA do
+  Caio; as cinco lições que custaram caro (23–25/11/2026).
+- [painel-qa-nti](painel-qa-nti.md): o painel que é a fonte da verdade dos achados, sua API e
+  o que ele lê do git.
+- [painel-qa-marcar-resolvido](painel-qa-marcar-resolvido.md): corrigir e mergear não tira o
+  achado da fila; como marcar "Resolvi".
 - [triagem-automacao-gp](triagem-automacao-gp.md): triagem e desenho de
   automações das disciplinas de engenharia da GP.
 - [vibecode-flow](vibecode-flow.md): Protocolo V.I.B.E. para MVP e protótipo rápido.

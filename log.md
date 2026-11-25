@@ -142,3 +142,14 @@ Estado, decisões 18–23 e pendências em memory/projects/lol-dark.md; lições
 
 ## [2026-11-24] sessao | MC de Processo (Vasos/Trocador/PSV): acabamento, cobertura e QA
 Três automações niveladas no padrão v1.0: acabamento portado da MC de Linhas (XXX amarelo, imagens órfãs e metadados do arquivo-modelo zerados — fechou vazamento do autor Petrobras ENGENHARIA/IEABAST/EAB em todo .docx), painel de cobertura (preenchido × base, via dataclass Cobertura + gerar_com_cobertura + header X-MC-Cobertura) e aviso de formato de tabela no Trocador/PSV (casamento por ordem). 4 achados do reteste do Vasos corrigidos (decimal em notação científica, texto do botão, aviso de "não recalcula", título de seção vazando p/ Documentos). PRs #115/#101/#104/#116 mergeados no development; apps 8952-8954 no ar. Coordenação com a sessão zerar-pendencias-painel-qa (QA do painel 8960). GPlan 617/618/619 em Concluído. Pendente da Manuela: chave de identidade da trava anti-corpo-alheio no Trocador/PSV + metodologia-padrão. Nota: memory/projects/mc-processo-vasos-trocadores-psv.md.
+
+## [2026-11-25] ingest | Rodada de QA das automações: 180 achados, 21 PRs
+Dia inteiro corrigindo os achados da QA do Caio em `GpDevLab/gpautomacoes`: 139 dos 152 do escopo
+original e 41 da segunda leva; 11 PRs mergeados e 10 abertos com CI verde (149 checks, zero falha).
+Criadas: [rodada-qa-automacoes](memory/projects/rodada-qa-automacoes.md),
+[painel-qa-nti](memory/projects/painel-qa-nti.md),
+[painel-qa-marcar-resolvido](memory/projects/painel-qa-marcar-resolvido.md).
+O que vale guardar, mais que as correções: a `development` não tinha o código que roda em produção
+(62 commits só no servidor, 51 de 80 pastas diferentes); o critério de aceite está na coluna
+"Resultado esperado" do checklist, não na descrição do erro; corrigir e mergear não tira o achado da
+fila do painel; e medir no Excel e no Word reais (`win32com`) achou defeito que o teste não pegava.
