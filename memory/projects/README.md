@@ -24,6 +24,7 @@ Projetos com pesquisa própria ficam no wiki ([wiki/projetos](../../wiki/index.m
 - [contexto-engenharia](contexto-engenharia.md): harness local que monta o dossiê
   de contexto (o que já existe, normas, dados, pessoas, lições) antes de criar
   uma automação.
+- [phantom-blade-zero](phantom-blade-zero.md): desempenho do Phantom Blade Zero no Fedora (scripts `pbz`, `pbz-medir`).
 
 Related: [00-Index](../../00-Index.md)
 - [sgm](sgm.md): SGM, sistema de listas de materiais de tubulação (Tubulação e
