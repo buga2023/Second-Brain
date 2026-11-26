@@ -53,11 +53,21 @@ Check = `conferir.py` saída × gabarito, item a item, e `pytest`.
   comando têm as mesmas 4.336 entidades, 0 diferentes; 11 de 11 itens do padrão
   iguais ao gabarito.
 
+- 26/11/2026 (Gustavo): tudo que rodava só na máquina dele vai para o servidor Linux,
+  para não cair quando o PC desliga. Eram cinco apps: APR, HAZOP, FD de Mecânica,
+  Emissor de FD e este. Emissor de FD, APR e HAZOP já tinham subido em 24/11 e saíram do ar em
+  25/11, quando um deploy da LI partiu de outra linha. Deploy novo parte sempre
+  do commit que está no ar.
+- 26/11/2026: conversão para DWG medida no Linux pela primeira vez. Caso A pelo
+  endereço oficial: 4.336 entidades, 0 diferentes do DWG gerado no Windows; 11 de 11
+  itens do padrão iguais ao gabarito.
+
 ## Onde roda
 
-Em teste na máquina do Gustavo: `http://10.71.0.215:8080/app/isometrico-padrao-emissao/`
-(sobe à mão, rota do nginx acrescentada à mão). O portal oficial recebe depois do
-merge do PR e de configurar a pasta de contratos no servidor. Card GPlan 655.
+Servidor Linux do portal desde 26/11/2026: `http://10.71.0.32:8080/app/isometrico-padrao-emissao/`
+(PM2, branch `deploy/apps-locais-26-11`). A configuração do contrato fica no servidor,
+fora do git, e chega ao app pela variável `ISO_CONTRATOS`. A máquina do Gustavo não
+serve mais essa tela. PR #144 ainda sem revisão humana. Card GPlan 655.
 
 ## Próximo passo
 
