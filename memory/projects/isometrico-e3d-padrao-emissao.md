@@ -62,6 +62,15 @@ Check = `conferir.py` saída × gabarito, item a item, e `pytest`.
   endereço oficial: 4.336 entidades, 0 diferentes do DWG gerado no Windows; 11 de 11
   itens do padrão iguais ao gabarito.
 
+- 26/11/2026 (Fábio, com o Gustavo): o SGM tem de sair no carimbo. Entrou na configuração
+  do contrato; Caso A passou de 11 para 13 itens iguais ao emitido. Falta o Fábio dizer se
+  o número vale para todas as folhas do contrato.
+- 26/11/2026 (Gustavo): a própria pessoa cadastra o contrato na tela e digita o que vai em
+  cada campo do carimbo. Feito na v0.2.0: sete campos (unidade, programa, área, duas linhas
+  de título, SGM, órgão gestor); posições do carimbo em `config/carimbo_e3d.json`, medidas
+  em uma folha; programa, área e título saem centralizados. Sem login e sem exclusão pela
+  tela. O contrato RPBC configurado pelo NTI não é editável pela tela.
+
 ## Onde roda
 
 Servidor Linux do portal desde 26/11/2026: `http://10.71.0.32:8080/app/isometrico-padrao-emissao/`
@@ -71,7 +80,8 @@ serve mais essa tela. PR #144 ainda sem revisão humana. Card GPlan 655.
 
 ## Próximo passo
 
-Aceite do Fábio no Portal; par da mesma extração em revisão 0; Casos B e C;
+Aceite do Fábio no Portal; abrir no CAD um DWG de contrato criado pela tela; par da mesma
+extração em revisão 0; Casos B e C;
 origem dos documentos de referência e do SGM; regra da data e sufixo de revisão.
 
 Related: [README](README.md) · [sgm](sgm.md) · [revisao-fluxograma-engenharia](revisao-fluxograma-engenharia.md)
