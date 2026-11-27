@@ -77,6 +77,10 @@ Check = `conferir.py` saída × gabarito, item a item, e `pytest`.
   Gustavo: como ninguém tem a fonte, a automação mede a célula no desenho e estreita o que ela
   escreve até caber (RN-06; EX-04 quando nem no mínimo cabe).
 
+- 27/11/2026: nas extrações novas do E3D o carimbo **já vem preenchido** (título, programa, área,
+  cliente). A automação não reescreve campo que já está na posição, então o texto largo era do
+  próprio desenho. A RN-06 passou a medir todo texto dentro do carimbo, não só o que ela escreve.
+
 ## Onde roda
 
 Servidor Linux do portal desde 26/11/2026: `http://10.71.0.32:8080/app/isometrico-padrao-emissao/`
