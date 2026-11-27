@@ -71,6 +71,12 @@ Check = `conferir.py` saída × gabarito, item a item, e `pytest`.
   em uma folha; programa, área e título saem centralizados. Sem login e sem exclusão pela
   tela. O contrato RPBC configurado pelo NTI não é editável pela tela.
 
+- 27/11/2026: a fonte do carimbo (`O8116901.shx`, estilo HTX1) **não existe em nenhuma máquina
+  da GP**. Quem gera o PDF usa a de substituição, mais larga, e o texto passa da borda da célula.
+  O DWG emitido à mão pela engenharia tem o mesmo defeito, então não vem da automação. Decisão do
+  Gustavo: como ninguém tem a fonte, a automação mede a célula no desenho e estreita o que ela
+  escreve até caber (RN-06; EX-04 quando nem no mínimo cabe).
+
 ## Onde roda
 
 Servidor Linux do portal desde 26/11/2026: `http://10.71.0.32:8080/app/isometrico-padrao-emissao/`
